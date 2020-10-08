@@ -46,4 +46,12 @@ sudo ./nvidia-XXX --no-opengl-files --no-nouveau-check --no-x-check
 sudo service lightdm start
 
 
+# 安装anaconda 后出现 base
+# 命令行执行：
+conda config --set auto_activate_base False
 
+# 编辑 .zshrc 或者 .bashrc 加入python的路径
+sudo gedit ~/.zshrc  
+# 加入
+# setting for anaconda python  一定要全路径不能用～代表家目录
+export PATH="/home/jing/anaconda3/bin:$PATH"
