@@ -2,6 +2,10 @@
 sudo apt install tmux
 # 安装Oh My Tmux!
 # https://github.com/gpakosz/.tmux
+# 在.tmux.conf.local 最后一行添加命令：
+# 在tmux中使用鼠标
+set-option -g mouse on
+
 
 # 安装ranger 官网 https://github.com/ranger/ranger
 sudo apt install ranger
