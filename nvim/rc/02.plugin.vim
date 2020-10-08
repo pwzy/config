@@ -95,8 +95,8 @@ Plug 'vim-scripts/indexer.tar.gz'
 Plug 'vim-scripts/vimprj'
 Plug 'vim-scripts/DfrankUtil'
 " 片段补全
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
 " 代码回滚
 Plug 'sjl/gundo.vim'
 " 实时显示markdown效果
