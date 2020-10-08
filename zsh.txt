@@ -1,0 +1,29 @@
+# 先看下你的 CentOS 支持哪些 shell：
+cat /etc/shells
+# 安装zsh
+sudo apt-get install -y zsh
+# 安装oh-my-zsh
+https://github.com/robbyrussell/oh-my-zsh
+# 如果安装时未选择默认终端，则可以使用以下命令
+chsh -s /usr/bin/fish
+# 改后重启或者重新登出才有效果
+
+# 更改zsh的默认主题为 agnoster
+gedit ~/.zshrc
+
+# 终端安装powerline字体
+sudo apt-get install powerline
+# 重启终端即可正常显示
+
+# 安装插件
+zsh-syntax-highlighting
+zsh-autosuggestions
+
+完成
+
+
+
+
+
+
+

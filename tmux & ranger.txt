@@ -1,0 +1,51 @@
+# 安装tmux
+sudo apt install tmux
+# 安装Oh My Tmux!
+# https://github.com/gpakosz/.tmux
+
+# 安装ranger 官网 https://github.com/ranger/ranger
+sudo apt install ranger
+# 重命名ranger 为rg
+sudo gedit ~/.zshrc  添加 alias rg="ranger" 然后更新 source ~/.zshrc
+
+# 配置ranger 通过man命令可以查到
+ ranger --copy-config=all
+ 
+# 添加以下内容
+map gd cd ~/Desktop
+map gb cd ~/.config/
+map eb shell nvim ~/.bashrc
+map ev1 shell vim ~/.config/nvim/rc/01.settings.vim
+map ev2 shell vim ~/.config/nvim/rc/02.plugin.vim
+map ev3 cd ~/.config/nvim/
+map er cd ~/.config/ranger/
+map et shell nvim ~/.tmux.conf.local
+
+
+# 安装ranger插件ranger_devicons
+https://github.com/alexanderjeurissen/ranger_devicons
+
+# 安装字体
+# 先下载字体，然后解压
+sudo mv fontdir /usr/share/fonts/
+
+cd /usr/share/fonts/fontdir
+sudo mkfontscale # 生成核心字体信息，控制字体旋转缩放
+sudo mkfontdir # 生成字体文件夹，控制字体粗斜体产生
+sudo fc-cache -fv # 刷新系统字体缓存
+
+# 在终端中设置字体即可
+
+# # 删除字体
+# 直接删除/usr/share/fonts/中字体文件 然后：
+sudo fc-cache -fv # 刷新系统字体缓存
+
+#ubuntu 使用FriaMono 字体
+
+
+
+
+
+
+
+
