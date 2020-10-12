@@ -86,7 +86,7 @@ set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strf
 " 快捷键设置 <silent>保持窗口不要刷新
 nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
-nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> [B : <CR>
 nnoremap <silent> ]B :blast<CR>
 
 inoremap jk <Esc>
@@ -171,6 +171,12 @@ set matchtime=1
 set scrolloff=3
 " 为C程序提供自动缩进
 set smartindent
+
+" 设置补全弹出的菜单颜色 参考：https://www.dazhuanlan.com/2019/08/30/5d6870952c2e0/
+colorscheme murphy
+hi Pmenu ctermfg=black ctermbg=gray  guibg=#444444
+hi PmenuSel ctermfg=LightGray ctermbg=DarkRed guibg=#777777 guifg=LightYellow
+
 
 "" 小插件的设置开始 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 " >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -288,7 +294,6 @@ function! ClosePair(char)
         return a:char
     endif
 endfunction
-
 
 
 
