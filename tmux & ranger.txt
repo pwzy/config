@@ -24,6 +24,8 @@ map ev2 shell vim ~/.config/nvim/rc/02.plugin.vim
 map ev3 cd ~/.config/nvim/
 map er cd ~/.config/ranger/
 map et shell nvim ~/.tmux.conf.local
+map ez shell nvim ~/.zshrc
+map es cd ~/.local/share/
 
 
 # 安装ranger插件ranger_devicons
