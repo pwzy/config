@@ -23,6 +23,9 @@ sudo apt-get install npm
 # 查看安装的插件 
 :CoCList extensions
 
+# 安装常用的 vimspector 插件 官网： https://github.com/puremourning/vimspector
+:VimspectorInstall --all --disable-tcl
+
 
 
 
