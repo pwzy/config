@@ -69,7 +69,7 @@ Plug 'junegunn/fzf.vim'
 "Plug 'Shougo/neosnippet.vim'
 "Plug 'Shougo/neosnippet-snippets'
 " 异步语法检查
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 " PEP8语法检查
 Plug 'nvie/vim-flake8'
 " python代码折叠
