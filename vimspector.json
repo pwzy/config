@@ -1,0 +1,14 @@
+{
+  "configurations": {
+    "launch current file": {
+      "adapter": "debugpy",
+      "configuration": {
+        "request": "launch",
+        "program": "${file}",
+        "externalConsole": true, 
+        "MIMode": "lldb",
+        "args": [ "*${args}" ]
+      }
+    }
+  }
+}
