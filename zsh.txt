@@ -19,6 +19,10 @@ sudo apt-get install powerline
 zsh-syntax-highlighting
 zsh-autosuggestions
 
+# 解决vim在tmux中颜色不正常问题
+alias vim='TERM=xterm-256color vim'
+
+
 完成
 
 
