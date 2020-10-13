@@ -26,7 +26,8 @@ let g:coc_global_extensions = [
     \ 'coc-vimlsp',
     \ 'coc-vetur',
     \ 'coc-yaml',
-    \ 'coc-yank']
+    \ 'coc-yank'
+    \ 'coc-termial']
 
 
 " TextEdit might fail if hidden is not set. 设置文件未保存coc插件跳转时不报错
