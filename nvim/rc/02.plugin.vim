@@ -102,7 +102,7 @@ Plug 'sjl/gundo.vim'
 " 实时显示markdown效果
 Plug 'suan/vim-instant-markdown'
 " 快速执行
-Plug 'thinca/vim-quickrun'
+" Plug 'thinca/vim-quickrun'
 " 快速编写html
 "Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Plug 'othree/html5.vim'
