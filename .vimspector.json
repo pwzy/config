@@ -1,0 +1,20 @@
+{
+  "configurations": {
+    "launch current file": {
+      "adapter": "debugpy",
+      "configuration": {
+        "request": "launch",
+        "program": "${file}",
+        "externalConsole": true,
+        "MIMode": "ipdb",
+        "args": [ "*${args}" ]
+      },
+      "breakpoints": {
+          "exception":{
+              "caught": "N",
+              "uncaught": "Y"
+          }
+      }
+    }
+  }
+}
