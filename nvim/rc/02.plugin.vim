@@ -59,7 +59,7 @@ Plug 'mhinz/vim-startify'
 " 快速选择相领的对象
 Plug 'vim-scripts/wildfire.vim'
 " 翻页平滑滚动
-Plug 'yonchu/accelerated-smooth-scroll'
+" Plug 'yonchu/accelerated-smooth-scroll'
 " 模糊搜索
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
