@@ -16,8 +16,21 @@ sudo apt-get install powerline
 # 重启终端即可正常显示
 
 # 安装插件
-zsh-syntax-highlighting
+zsh-syntax-highlighting:
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+# 还可以安装自动跳转插件： autojump 
+# 在plugins后括号里添加安装的插件名字
+plugins=(   
+            git 
+            zsh-autosuggestions 
+            zsh-syntax-highlighting
+        )
+        
+# 编辑 /root/.oh-my-zsh/themes/agnoster.zsh-theme
+
+# 注释掉 Main_prompt 中的 prompt_context
 
 # 解决vim在tmux中颜色不正常问题
 # 在.zshrc 或者 .bashrc 中添加以下代码即可
