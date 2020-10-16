@@ -102,8 +102,8 @@ nnoremap <leader>n :nohl<CR>
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.jpg,*.png,*.gif,*.jpeg,.DS_Store  " MacOSX/Linux
 
 " settings for resize splitted window
-nmap w[ :vertical resize -3<CR>
-nmap w] :vertical resize +3<CR>
+nmap w] :vertical resize -3<CR>
+nmap w[ :vertical resize +3<CR>
 
 nmap w- :resize -3<CR>
 nmap w= :resize +3<CR>
