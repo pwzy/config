@@ -178,3 +178,6 @@ nnoremap <silent><nowait> ,j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> ,k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> ,p  :<C-u>CocListResume<CR>
+
+" 删除ubuntu安装时候的警告
+let g:coc_disable_startup_warning = 1
