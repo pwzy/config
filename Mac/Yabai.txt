@@ -18,3 +18,10 @@ brew install skhd
 brew services restart skhd
 brew services restart yabai
 
+
+# 安装spacebar : https://github.com/cmacrae/spacebar
+
+brew install cmacrae/formulae/spacebar
+brew services start spacebar
+
+# 添加spacebar的配置文件即可
