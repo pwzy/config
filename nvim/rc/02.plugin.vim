@@ -120,7 +120,8 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'rking/ag.vim'
 " vim 调试插件
 Plug 'puremourning/vimspector'
-
+" 高亮单词
+Plug 'lfv89/vim-interestingwords'
 
 
 "" 插件在此之前  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
