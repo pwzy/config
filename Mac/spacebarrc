@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# 使用font-awesome替代罗马数字
+# yabai -m config status_bar_space_icon_strip                8 9 
+
 spacebar -m config position           top
 spacebar -m config height             26
 # spacebar -m config spacing_left       25
