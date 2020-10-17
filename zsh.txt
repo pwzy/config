@@ -41,8 +41,13 @@ plugins=(
 # 在.zshrc 或者 .bashrc 中添加以下代码即可
 export TERM=xterm-256color
 
+##################################################################################################
+# 安装快速查找工具
+sudo apt-get install silversearcher-ag
 
-完成
+
+
+完成！
 
 
 
