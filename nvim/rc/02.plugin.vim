@@ -114,6 +114,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lervag/vimtex'
 " 翻译
 Plug 'voldikss/vim-translate-me'
+" 进行代码格式化
+Plug 'Chiel92/vim-autoformat'
+" 快速查找
+Plug 'rking/ag.vim'
 " vim 调试插件
 Plug 'puremourning/vimspector'
 
