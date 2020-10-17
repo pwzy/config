@@ -6,6 +6,14 @@ sudo apt install tmux
 # 在tmux中使用鼠标
 set-option -g mouse on
 
+# 在 ~/.bashrc 中加入，提高tmux使用效率
+
+alias ta="tmux attach-session -t "
+alias tn="tmux new-session -t "
+alias tk="tmux kill-session -t "
+
+
+
 
 # 安装ranger 官网 https://github.com/ranger/ranger
 sudo apt install ranger
