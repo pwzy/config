@@ -25,7 +25,7 @@ map et shell nvim ~/.tmux.conf.local
 map ez shell nvim ~/.zshrc
 # map ev4 cd ~/.local/share/nvim/plugged/vimspector/gadgets/macos
 map ev4 cd ~/.local/share/nvim/plugged/vimspector/gadgets/linux
-map ev3 cd ~/.config/nvim/
+map ev3 cd ~/.config/nvim/rc/
 map er cd ~/.config/ranger/
 map es cd ~/.local/share/
 
