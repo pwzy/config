@@ -1,0 +1,20 @@
+# Yabai 安装
+
+# 官网：https://github.com/koekeishiya/yabai
+# 参考：https://github.com/itgoyo/500Days-Of-Github/issues/224
+
+# 先关闭SIP（系统完整性保护）
+# 安装yabai
+
+brew install yabai
+sudo yabai --install-sa
+
+# 安装快捷键支持（守护热键盘程序）
+brew install skhd
+
+
+# 开启服务
+# 第一次启动会请求授权，请求授权后 restart 即可
+brew services restart skhd
+brew services restart yabai
+
