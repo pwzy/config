@@ -86,7 +86,7 @@ set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strf
 " 快捷键设置 <silent>保持窗口不要刷新
 nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
-nnoremap <silent> [B : <CR>
+nnoremap <silent> [B :bfirst <CR>
 nnoremap <silent> ]B :blast<CR>
 
 inoremap jk <Esc>
