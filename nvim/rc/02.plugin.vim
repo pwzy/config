@@ -35,7 +35,7 @@ Plug 'dyng/ctrlsf.vim'
 " XML编辑
 Plug 'vim-scripts/xml.vim'
 " git diff 显示，用于git版本控制
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
 " git包装器
 Plug 'tpope/vim-fugitive'
 " 括号配对
