@@ -101,12 +101,21 @@ nnoremap <leader>n :nohl<CR>
 " 设置搜索忽略的文件
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.jpg,*.png,*.gif,*.jpeg,.DS_Store  " MacOSX/Linux
 
-" settings for resize splitted window
-nmap w] :vertical resize -3<CR>
-nmap w[ :vertical resize +3<CR>
-
+" 映射窗口调整大小 
+nmap w[ :vertical resize -3<CR>
+nmap w] :vertical resize +3<CR>
 nmap w- :resize -3<CR>
 nmap w= :resize +3<CR>
+
+" 映射窗口快速移动 
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+
+
+" 映射保存文件
+nnoremap <leader>s :w<CR>
 
 "代码补全
 "set completeopt=preview,menu
