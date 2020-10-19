@@ -6,7 +6,6 @@ let g:coc_global_extensions = [
     \ 'coc-diagnostic',
     \ 'coc-explorer',
     \ 'coc-flutter-tools',
-    \ 'coc-gitignore',
     \ 'coc-html',
     \ 'coc-json',
     \ 'coc-lists',
