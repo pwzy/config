@@ -11,8 +11,8 @@ let g:coc_global_extensions = [
     \ 'coc-json',
     \ 'coc-lists',
     \ 'coc-prettier',
-    \ 'coc-pyright',
     \ 'coc-python',
+    \ 'coc-pyright',
     \ 'coc-snippets',
     \ 'coc-sourcekit',
     \ 'coc-stylelint',
@@ -179,5 +179,8 @@ nnoremap <silent><nowait> ,k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> ,p  :<C-u>CocListResume<CR>
 
-" 删除ubuntu安装时候的警告
-let g:coc_disable_startup_warning = 1
+
+" adding setting for explorer
+nmap <space>e :CocCommand explorer<CR>
+nmap <space>f :CocCommand explorer --preset floating<CR>
+autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
