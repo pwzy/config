@@ -15,7 +15,7 @@ Plug 'altercation/vim-colors-solarized'
 " 文本搜索
 Plug 'jremmen/vim-ripgrep'
 " 模糊搜索文件
-Plug 'ctrlpvim/ctrlp.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
 " 前端开发
 Plug 'mattn/emmet-vim'
 " 树形目录
