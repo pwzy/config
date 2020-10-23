@@ -117,7 +117,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " 进行代码格式化 " 用coc-prettier 代替
 " Plug 'Chiel92/vim-autoformat'
 " 快速查找 " 用fzf代替
-“ Plug 'rking/ag.vim'
+" Plug 'rking/ag.vim'
 " vim 调试插件
 Plug 'puremourning/vimspector'
 " 高亮单词
