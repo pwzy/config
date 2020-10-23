@@ -21,5 +21,5 @@
    "augroup END
 
 
-let g:jedi#completions_command = "<C-L>"
+" let g:jedi#completions_command = "<C-L>"
 
