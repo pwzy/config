@@ -27,6 +27,7 @@ let g:coc_global_extensions = [
     \ 'coc-yank']
 " 注意
 " coc-python 需要pip install jedi>=0.17
+“ 卸载重装coc 先删除 ~/.config/coc
 
 " TextEdit might fail if hidden is not set. 设置文件未保存coc插件跳转时不报错
 set hidden
