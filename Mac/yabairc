@@ -40,7 +40,8 @@ yabai -m config right_padding                "${gaps_right}"
 yabai -m config window_gap                   "${gaps_inner}"
 
 # 临时性的 App 也就是 manage=off 不受到 yabai 平铺式的限制，之前怎么弹出来就怎么弹出来
-otherApp='^(访达|Finder|Calendar|日历|System Preferences|系统偏好设置|1Password 7|Mail|微信|WeChatc|QQ|Google Chrome|IINA|Visual Studio Code|OBS)$'
+otherApp='^(访达|Finder|Calendar|日历|System Preferences|系统偏好设置|1Password 7|Mail|微信|WeChatc|QQ|Google Chrome|IINA|Visual Studio Code|App Store|OBS|预览|百度网盘|PullTube|文本编辑)$'
 yabai -m rule --add app="${otherApp}" manage=off
+
 
 echo "yabai configuration loaded.."
