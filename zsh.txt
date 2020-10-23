@@ -44,7 +44,26 @@ export TERM=xterm-256color
 ##################################################################################################
 # 安装快速查找工具
 sudo apt-get install silversearcher-ag
+sudo apt-get install fzf -y
 
+# 如果失败则 sudo apt-get upgrade  && sudo apt-get update  即可  或者用 git 安装：网 https://github.com/junegunn/fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
+# 安装 powerlevel10k  网址： https://github.com/romkatv/powerlevel10k
+# 使用手动安装方法，执行：
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
+
+source ~/.zshrc 
+# 运行 p10k 命令查看用法
+vim ~/.p10k.zsh  # 注释掉   context （主机名称内容）
+
+vim ~/.zhsrc 
+# 添加 ranger 快捷键
+
+alias rg=ranger
 
 
 完成！
