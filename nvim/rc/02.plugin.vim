@@ -13,11 +13,11 @@ Plug 'altercation/vim-colors-solarized'
 "Plug 'iCyMind/NeoSolarized'
 "Plug 'flazz/vim-colorschemes'
 " 文本搜索
-“ Plug 'jremmen/vim-ripgrep'
+" Plug 'jremmen/vim-ripgrep'
 " 模糊搜索文件  " 可以用fzf插件代替
 " Plug 'ctrlpvim/ctrlp.vim'  
 " 前端开发
-“ Plug 'mattn/emmet-vim'
+" Plug 'mattn/emmet-vim'
 " 树形目录 " 可以用coc-explore代替
 " Plug 'scrooloose/nerdtree'
 " 人性化nerdtree  使用tab键切换窗口与目录树
