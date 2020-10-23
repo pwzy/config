@@ -1,0 +1,35 @@
+1. 下载frp https://github.com/fatedier/frp
+到网址下载release包： ubuntu选择：frp_0.34.1_linux_amd64.tar.gz
+		   mac 选择： frp_0.34.1_darwin_amd64.tar.gz
+		   windows选择： frp_0.34.1_windows_amd64.zip
+
+####################################################################
+服务端配置：frps.ini
+
+[common]
+bind_port = 7000
+
+####################################################################
+客户端配置：frpc.ini
+
+[common]
+server_addr = 111.111.111.111
+server_port = 7000
+
+[ssh]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 22
+remote_port = 6000
+
+####################################################################
+
+配置完成，在服务端运行命令：
+nohup ./frp/frps -c ./frp/frps.ini &  
+
+在客户端运行命令：
+nohup ./frp/frpc -c ./frp/frpc.ini & 
+
+连接命令：
+ ssh jing@111.111.111.111 -p 6000  
+

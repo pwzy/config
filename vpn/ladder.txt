@@ -1,0 +1,9 @@
+1. 设置服务器远程连接密码，用ssh远程连接服务器
+2. 设置aliyun防火墙，打开访问端口
+3. 进行配置
+	3.1 第一种
+		bash <(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
+	3.2 第二种
+		https://github.com/xiaoming2028/FreePAC
+		直接运行：
+		bash <(curl -s -L https://git.io/v2ray.sh)
