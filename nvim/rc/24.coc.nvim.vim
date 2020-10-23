@@ -25,7 +25,8 @@ let g:coc_global_extensions = [
     \ 'coc-vetur',
     \ 'coc-yaml',
     \ 'coc-yank']
-
+" 注意
+" coc-python 需要pip install jedi>=0.17
 
 " TextEdit might fail if hidden is not set. 设置文件未保存coc插件跳转时不报错
 set hidden
