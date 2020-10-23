@@ -189,19 +189,7 @@ hi PmenuSel ctermfg=LightGray ctermbg=DarkRed guibg=#777777 guifg=LightYellow
 
 "" 小插件的设置开始 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 " >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-" 插件vim-move
-let g:move_key_modifier = 'C'
-
-" For neomake
-nnoremap <leader>m :Neomake<CR>
-let g:neomake_open_list = 2
-let g:neomake_list_height = 7
-
-" coc settings
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<CR>"
-
-" 插件ack
-let g:ackprg = 'ag --nogroup --nocolor --column'
+" 插件设置在外面建文件设置
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -282,27 +270,5 @@ endfunc
 " endfunc
 """""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""
-
-" quickfix模式
-autocmd FileType c,cpp map <buffer> <leader><space> :w<cr>:make<cr>
-
-"自动补全
-" :inoremap ( ()<ESC>i
-" :inoremap ) <c-r>=ClosePair(')')<CR>
-" :inoremap { {<CR>}<ESC>O
-" :inoremap } <c-r>=ClosePair('}')<CR>
-:inoremap [ []<ESC>i
-:inoremap ] <c-r>=ClosePair(']')<CR>
-:inoremap " ""<ESC>i
-:inoremap ' ''<ESC>i
-
-function! ClosePair(char)
-    if getline('.')[col('.') - 1] == a:char
-        return "\<Right>"
-    else
-        return a:char
-    endif
-endfunction
-
 
 
