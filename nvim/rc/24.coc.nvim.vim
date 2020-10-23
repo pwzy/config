@@ -1,38 +1,29 @@
-" ===   安装常用的coc插件
-" === coc.nvim
-" ===
+" " ===   安装常用的coc插件
+" " === coc.nvim
+" " ===
+
 let g:coc_global_extensions = [
-    \ 'coc-css',
-    \ 'coc-diagnostic',
     \ 'coc-explorer',
-    \ 'coc-flutter-tools',
-    \ 'coc-html',
     \ 'coc-json',
-    \ 'coc-lists',
-    \ 'coc-prettier',
     \ 'coc-python',
-    \ 'coc-pyright',
+    \ 'coc-yank',
+    \ 'coc-lists',
     \ 'coc-snippets',
-    \ 'coc-sourcekit',
-    \ 'coc-stylelint',
-    \ 'coc-syntax',
+    \ 'coc-prettier',
     \ 'coc-tasks',
     \ 'coc-todolist',
     \ 'coc-translator',
-    \ 'coc-tslint-plugin',
     \ 'coc-tsserver',
+    \ 'coc-tslint-plugin',
+    \ 'coc-diagnostic',
     \ 'coc-vimlsp',
-    \ 'coc-vetur',
-    \ 'coc-yaml',
-    \ 'coc-yank']
-" 注意
-" coc-python 需要pip install jedi>=0.17
-“ 卸载重装coc 先删除 ~/.config/coc
+    \ ]
+"   'coc-python' 安装需要 pip install jedi>=0.17
 
-" TextEdit might fail if hidden is not set. 设置文件未保存coc插件跳转时不报错
+" 设置文件未保存coc插件跳转时不报错
 set hidden
 
-" Some servers have issues with backup files, see #649.
+" Some servers have issues with backup files, see #649. 设置不备份文件
 set nobackup
 set nowritebackup
 
