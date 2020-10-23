@@ -122,7 +122,7 @@ Plug 'rking/ag.vim'
 Plug 'puremourning/vimspector'
 " 高亮单词
 Plug 'lfv89/vim-interestingwords'
-# 管理日常插件
+" 管理日常插件
 Plug 'vimwiki/vimwiki'
 
 "" 插件在此之前  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
