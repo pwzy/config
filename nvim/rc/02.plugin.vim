@@ -1,17 +1,12 @@
 call plug#begin('~/.local/share/nvim/plugged')
 "" 插件在此之后  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
-
-
-" 配色方案
-Plug 'altercation/vim-colors-solarized' 
-"Plug 'jnurmine/Zenburn'
-"Plug 'altercation/vim-colors-solarized'
-"Plug 'tomasr/molokai'
-"Plug 'vim-scripts/phd'
-"Plug 'iCyMind/NeoSolarized'
-"Plug 'flazz/vim-colorschemes'
+" Plug 'jnurmine/Zenburn'
+" Plug 'altercation/vim-colors-solarized'
+" Plug 'tomasr/molokai'
+" Plug 'vim-scripts/phd'
+" Plug 'iCyMind/NeoSolarized'
+" Plug 'flazz/vim-colorschemes'
 " 文本搜索
 " Plug 'jremmen/vim-ripgrep'
 " 模糊搜索文件  " 可以用fzf插件代替
@@ -24,10 +19,6 @@ Plug 'altercation/vim-colors-solarized'
 " Plug 'jistr/vim-nerdtree-tabs'
 " 显示git文件变更，会遮挡左边调试信息
 " Plug 'Xuyuanp/nerdtree-git-plugin'
-" 批量注释与反注释
-Plug 'scrooloose/nerdcommenter'
-" 大纲式导航
-Plug 'majutsushi/tagbar'
 " 全局搜索
 " Plug 'vim-scripts/ag.vim' 
 " 更强大的全局搜索，可异步搜索
@@ -38,31 +29,12 @@ Plug 'majutsushi/tagbar'
 " Plug 'airblade/vim-gitgutter'
 " git包装器
 " Plug 'tpope/vim-fugitive'
-" 括号配对
-Plug 'jiangmiao/auto-pairs'
-" 更改成对符号
-Plug 'tpope/vim-surround'
 " 异步 运行程序
 " Plug 'tpope/vim-dispatch'
 " Plug 'skywind3000/asyncrun.vim'
 " Plug 'neomake/neomake'
-" 状态栏增强显示
-Plug 'bling/vim-airline'
-" 状态栏主题
-Plug 'vim-airline/vim-airline-themes'
-" 快速移动
-Plug 'Lokaltog/vim-easymotion'
-" 多光标操作
-Plug 'terryma/vim-multiple-cursors'
-" Vim启动界面
-Plug 'mhinz/vim-startify'
-" 快速选择相领的对象
-Plug 'vim-scripts/wildfire.vim'
 " 翻页平滑滚动 " 开启后远程连接会卡
 " Plug 'yonchu/accelerated-smooth-scroll'
-" 模糊搜索
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 " Go 开发
 " Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " 片段补全
@@ -76,12 +48,6 @@ Plug 'junegunn/fzf.vim'
 " Plug 'tmhedberg/SimpylFold'
 " python代码缩进
 " Plug 'vim-scripts/indentpython.vim'
-" 有旧插件的情况下，下载新的插件并重命名以避免冲突
-Plug 'ascenator/L9', {'name': 'newL9'}
-" C++ 关键字和库高亮
-Plug 'octol/vim-cpp-enhanced-highlight'
-" vim显示缩进线
-Plug 'nathanaelkane/vim-indent-guides'
 " 类声明自动生成类实现的代码框架
 " Plug 'derekwyatt/vim-protodef'
 " vim-protodef的依赖vim-fswitch  fswitch
@@ -108,8 +74,6 @@ Plug 'nathanaelkane/vim-indent-guides'
 " Plug 'othree/html5.vim'
 " python自动补全 " 用coc-python代替
 " Plug 'davidhalter/jedi-vim'
-" 强大插件
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " latex 插件
 " Plug 'lervag/vimtex'
 " 翻译 " 用coc-translate代替
@@ -118,12 +82,49 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'Chiel92/vim-autoformat'
 " 快速查找 " 用fzf代替
 " Plug 'rking/ag.vim'
+
+
+
+
+" 有旧插件的情况下，下载新的插件并重命名以避免冲突
+Plug 'ascenator/L9', {'name': 'newL9'}
+" C++ 关键字和库高亮
+Plug 'octol/vim-cpp-enhanced-highlight'
+" vim显示缩进线
+Plug 'nathanaelkane/vim-indent-guides'
+" 模糊搜索
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+" 状态栏增强显示
+Plug 'bling/vim-airline'
+" 状态栏主题
+Plug 'vim-airline/vim-airline-themes'
+" 快速移动
+Plug 'Lokaltog/vim-easymotion'
+" 多光标操作
+Plug 'terryma/vim-multiple-cursors'
+" Vim启动界面
+Plug 'mhinz/vim-startify'
+" 快速选择相领的对象
+Plug 'vim-scripts/wildfire.vim'
+" 括号配对
+Plug 'jiangmiao/auto-pairs'
+" 更改成对符号
+Plug 'tpope/vim-surround'
+" 批量注释与反注释
+Plug 'scrooloose/nerdcommenter'
+" 大纲式导航
+Plug 'majutsushi/tagbar'
+" 配色方案
+Plug 'altercation/vim-colors-solarized' 
 " vim 调试插件
 Plug 'puremourning/vimspector'
 " 高亮单词
 Plug 'lfv89/vim-interestingwords'
 " 管理日常插件
 Plug 'vimwiki/vimwiki'
+" 强大插件
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "" 插件在此之前  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 call plug#end()
