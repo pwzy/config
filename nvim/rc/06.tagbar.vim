@@ -1,5 +1,4 @@
 "Settings for TagBar
-nnoremap <leader>y :TagbarToggle<CR>
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
     \ 'kinds' : [
@@ -32,7 +31,8 @@ let g:tagbar_type_go = {
 " tagbar默认去这个目录中寻找ctags，ctags的默认安装路径也是这个目录
 " let g:tagbar_ctags_bin='/usr/bin/ctags'  " Proper Ctags locations
 let g:tagbar_width=26                      " Default is 40, seems too wide
-noremap <Leader>y :TagbarToggle<CR>        " Display panel with (,y)
+
+nnoremap <leader>ft :TagbarToggle<CR>
 
 " 启动 时自动focusw
 let g:tagbar_autofocus = 1
