@@ -125,6 +125,8 @@ Plug 'lfv89/vim-interestingwords'
 Plug 'vimwiki/vimwiki'
 " 强大插件
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" 安装中文帮助文档
+Plug 'yianwillis/vimcdoc'
 
 "" 插件在此之前  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 call plug#end()
