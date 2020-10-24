@@ -3,6 +3,8 @@
 " " ===
 " 如果然出现 Jedi error: Cannot call write after a stream was destroyed #1496
 " 运行:   CocCommand python.setInterpreter  即可
+" vim(coc.nvim)报错`Linter pylint is not installed.`
+" :CocCommand python.setInterpreter 选择python版本即可
 
 let g:coc_global_extensions = [
     \ 'coc-explorer',
