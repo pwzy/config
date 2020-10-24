@@ -32,7 +32,7 @@ let g:tagbar_type_go = {
 " let g:tagbar_ctags_bin='/usr/bin/ctags'  " Proper Ctags locations
 let g:tagbar_width=26                      " Default is 40, seems too wide
 
-nnoremap <leader>ft :TagbarToggle<CR>
+nnoremap <leader>fg :TagbarToggle<CR>
 
 " 启动 时自动focusw
 let g:tagbar_autofocus = 1
