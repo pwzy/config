@@ -3,7 +3,7 @@
 let NERDTreeQuitOnOpen = 0
 let NERDChristmasTree=1
 let g:NERDTreeWinSize = 32 
-nnoremap <leader>g :NERDTreeToggle<CR>
+nnoremap <leader>ft :NERDTreeToggle<CR>
 
 let NERDTreeChDirMode=1
 "显示书签"
