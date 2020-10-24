@@ -1,1 +1,1 @@
-nnoremap <leader>h :GundoToggle<CR>
+" nnoremap <leader>h :GundoToggle<CR>
