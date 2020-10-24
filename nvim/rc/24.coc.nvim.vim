@@ -1,8 +1,8 @@
 " " ===   安装常用的coc插件
 " " === coc.nvim
 " " ===
-# 如果然出现 Jedi error: Cannot call write after a stream was destroyed #1496
-# 运行:   CocCommand python.setInterpreter  即可
+" 如果然出现 Jedi error: Cannot call write after a stream was destroyed #1496
+" 运行:   CocCommand python.setInterpreter  即可
 
 let g:coc_global_extensions = [
     \ 'coc-explorer',
