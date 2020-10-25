@@ -15,6 +15,9 @@ nmap <leader>do <plug>VimspectorStepOut
 nmap <leader>dv <plug>VimspectorStepOver
 nmap <leader>dr <plug>VimspectorRestart
 
+" 清除断点
+nmap <leader>dB :call vimspector#ClearBreakpoints()<CR>
+
 " F3 停止调试
 " F4 重新调试
 " F6 暂停调试
