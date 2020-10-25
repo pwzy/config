@@ -53,8 +53,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 " vim-protodef的依赖vim-fswitch  fswitch
 " 帮助在配套文件（例如“.h”和“.cpp”文件）之间切换。
 " Plug 'derekwyatt/vim-fswitch'
-" 增强 Vim 的书签(标记)跳转功能
-" Plug 'kshenoy/vim-signature'
 " 自动生成标签  依赖DfrankUtil
 " Plug 'vim-scripts/indexer.tar.gz'
 " 管理工程 依赖DfrankUtil
@@ -83,9 +81,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 " 快速查找 " 用fzf代替
 " Plug 'rking/ag.vim'
 
-
-
-
+" 增强 Vim 的书签(标记)跳转功能
+Plug 'kshenoy/vim-signature'
 " 有旧插件的情况下，下载新的插件并重命名以避免冲突
 Plug 'ascenator/L9', {'name': 'newL9'}
 " C++ 关键字和库高亮
