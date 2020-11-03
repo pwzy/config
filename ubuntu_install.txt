@@ -20,6 +20,8 @@ lsmod | grep nouveau
 
 # 安装gcc ，直接 sudo apt-get install build-essential 安装必要的工具后对gcc和g++进行降级
 
+# 根据驱动要求决定是否需要降级或者升级
+
 sudo apt-get install -y gcc-7
 sudo apt-get install -y g++-7
 
