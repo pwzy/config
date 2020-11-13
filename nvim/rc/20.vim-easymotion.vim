@@ -8,3 +8,5 @@ map <Leader><leader>l <Plug>(easymotion-lineforward)
 " 重复上一次动作(.)
 map <Leader><leader>. <Plug>(easymotion-repeat)
 
+map <Leader><leader>w <Plug>(easymotion-w)                                                                                                             
+map <Leader><leader>b <Plug>(easymotion-b) 
