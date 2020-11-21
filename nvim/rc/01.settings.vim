@@ -13,14 +13,11 @@ set cursorcolumn
 " 设置字体
 " set guifont=Fira\ Code:h14
 
-" 设置文件显示编码
-set encoding=utf-8
 "去掉讨厌的有关vi一致性模式，避免以前版本的一些bug和局限
 set nocompatible
 " 设置总是显式状态行
 set laststatus=2
 " 设置文件转存编码
-set fenc=utf-8
 
 " 设置文件类型
 " 将制表符扩展为空格
@@ -32,7 +29,10 @@ set autoread
 " 设置文件编码检测类型及支持格式
 set fencs=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 set termencoding=utf-8
+" 设置文件显示编码
 set encoding=utf-8
+" 设置文件转换编码
+set fileencoding=utf-8
 set fenc=utf-8
 
 " 设定文件浏览器目录为当前目录
