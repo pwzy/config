@@ -26,7 +26,7 @@ set expandtab
 " 设置当文件被改动时自动载入
 set autoread
 
-" 设置文件编码检测类型及支持格式
+" 设置文件编码检测类型及支持格式 : fencs为fileencodings的缩写
 set fencs=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 set termencoding=utf-8
 " 设置文件显示编码
