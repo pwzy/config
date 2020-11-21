@@ -31,8 +31,7 @@ set fencs=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 set termencoding=utf-8
 " 设置文件显示编码
 set encoding=utf-8
-" 设置文件转换编码
-set fileencoding=utf-8
+" 设置文件转存编码
 set fenc=utf-8
 
 " 设定文件浏览器目录为当前目录
