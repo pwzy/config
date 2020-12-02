@@ -34,4 +34,4 @@ npm start
 # 在终端中进行简单的命令配置
 vim ～/.zshrc
 
-alias clash="nohup cd ~clash/clash-dashboard && npm start &"
+alias clash="cd ~/clash/clash-dashboard && nohup npm start &"
