@@ -12,7 +12,7 @@ cd clash
 ./clash -d . # 运行
 
 ##################################################################################
-# clash-dashboard 的配置
+# clash-dashboard 的配置  # 一般配置网站 http://clash.razord.top
 ##################################################################################
 
 # 克隆代码 到 ～/clash 中  参考网站： http://blog.thris.me/archives/cldash-https.html
