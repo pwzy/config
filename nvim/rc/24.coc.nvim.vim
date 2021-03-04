@@ -21,6 +21,7 @@ let g:coc_global_extensions = [
     \ 'coc-tslint-plugin',
     \ 'coc-diagnostic',
     \ 'coc-vimlsp',
+    \ 'coc-clangd',
     \ ]
 "   'coc-python' 安装需要 pip install jedi>=0.17
 
