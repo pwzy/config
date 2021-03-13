@@ -124,6 +124,8 @@ Plug 'vimwiki/vimwiki'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " 安装中文帮助文档
 Plug 'yianwillis/vimcdoc'
+" latex 插件
+Plug 'lervag/vimtex'
 
 "" 插件在此之前  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 call plug#end()
