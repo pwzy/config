@@ -9,7 +9,7 @@
 let g:coc_global_extensions = [
     \ 'coc-explorer',
     \ 'coc-json',
-    \ 'coc-python',
+    \ 'coc-pyright',
     \ 'coc-yank',
     \ 'coc-lists',
     \ 'coc-snippets',
