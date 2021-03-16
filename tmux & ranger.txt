@@ -31,22 +31,28 @@ https://github.com/erikw/tmux-powerline
 
 4. ~/.tmux.conf 配置文件如下：
 
-set -g prefix C-a
-unbind C-b
-bind a send-prefix
-set-option -g mouse on
-# set-option -g status-style bg=red
-set-option -g status-style bg=black
-set-option -g status-style fg=white
-
-bind-key r source-file ~/.tmux.conf \; \
-                   display-message "source-file done"
-                   
+# 设置tmux-powerline
 set-option -g status-justify "centre"
 set-option -g status-left-length 60
 set-option -g status-right-length 90
 set-option -g status-left "#(~/tmux-powerline/powerline.sh left)"
 set-option -g status-right "#(~/tmux-powerline/powerline.sh right)"
+
+# 更改前缀键
+set -g prefix C-a
+unbind C-b
+bind a send-prefix
+
+# 设置鼠标
+set-option -g mouse on
+
+# 设置status颜色
+set-option -g status-style fg=white
+set-option -g status-style bg=colour93
+
+# 绑定刷新配置文件快捷键
+bind-key r source-file ~/.tmux.conf \; \
+                   display-message "source-file done"
 
 #######################################################################
 
