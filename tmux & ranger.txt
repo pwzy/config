@@ -18,6 +18,39 @@ alias tk="tmux kill-session -t "
 pip install tmuxp
 
 
+#######################################################################
+tmux 配置：
+1. 设置TERM类型，避免tmux中使用vim颜色错乱
+export TERM=xterm-256color
+
+2. 下载tmux-powerline
+https://github.com/erikw/tmux-powerline
+
+3. 更改  tmux-powerline/themes/default.sh 中的powerline的前景与背景颜色，
+可通过运行 tmux-powerline/color_palette.sh 观察颜色设置，然后更改状态栏组件。
+
+4. ~/.tmux.conf 配置文件如下：
+
+set -g prefix C-a
+unbind C-b
+bind a send-prefix
+set-option -g mouse on
+# set-option -g status-style bg=red
+set-option -g status-style bg=black
+set-option -g status-style fg=white
+
+bind-key r source-file ~/.tmux.conf \; \
+                   display-message "source-file done"
+                   
+set-option -g status-justify "centre"
+set-option -g status-left-length 60
+set-option -g status-right-length 90
+set-option -g status-left "#(~/tmux-powerline/powerline.sh left)"
+set-option -g status-right "#(~/tmux-powerline/powerline.sh right)"
+
+#######################################################################
+
+
 
 
 # 安装ranger 官网 https://github.com/ranger/ranger
