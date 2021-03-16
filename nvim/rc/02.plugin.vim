@@ -126,6 +126,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'yianwillis/vimcdoc'
 " latex 插件
 Plug 'lervag/vimtex'
+" 配色表
+Plug 'guns/xterm-color-table.vim'
 
 "" 插件在此之前  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 call plug#end()
