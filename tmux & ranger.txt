@@ -11,6 +11,8 @@ set-option -g mouse on
 alias ta="tmux attach-session -t "
 alias tn="tmux new-session -t "
 alias tk="tmux kill-session -t "
+alias tl="tmux ls"
+alias tp="tmuxp load "
 
 ###################################
 # 要自动化创建tmux会话使用 tmuxp
