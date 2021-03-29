@@ -114,7 +114,7 @@ nnoremap <C-k> <C-w>k
 
 
 " 映射保存文件
-nnoremap <leader>s :w<CR>
+nnoremap <leader>ss :w<CR>
 
 "代码补全
 "set completeopt=preview,menu
