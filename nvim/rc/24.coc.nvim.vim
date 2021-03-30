@@ -10,6 +10,7 @@ let g:coc_global_extensions = [
     \ 'coc-explorer',
     \ 'coc-json',
     \ 'coc-pyright',
+    \ 'coc-jedi',
     \ 'coc-yank',
     \ 'coc-lists',
     \ 'coc-snippets',
