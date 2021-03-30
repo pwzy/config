@@ -101,10 +101,10 @@ nnoremap <leader>n :nohl<CR>
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.jpg,*.png,*.gif,*.jpeg,.DS_Store  " MacOSX/Linux
 
 " 映射窗口调整大小 
-nmap w[ :vertical resize -3<CR>
-nmap w] :vertical resize +3<CR>
-nmap w- :resize -3<CR>
-nmap w= :resize +3<CR>
+nmap <leader>[ :vertical resize -3<CR>                                                                                                
+nmap <leader>] :vertical resize +3<CR>                                                                                                
+nmap <leader>- :resize -3<CR>                                                                                                         
+nmap <leader>= :resize +3<CR> 
 
 " 映射窗口快速移动 
 nnoremap <C-h> <C-w>h
