@@ -51,7 +51,7 @@ set clipboard=unnamed
 "显示行号
 set nu
 "显示相对行号
-set relativenumber
+"set relativenumber
 
 " 设置退格
 set backspace=indent,eol,start
