@@ -72,7 +72,7 @@ alias rg=ranger
 #################################################################################################
 # 其他软件
 
-brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump the_silver_searcher ripgrep
+brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump the_silver_searcher ripgrep node
 
 
 
