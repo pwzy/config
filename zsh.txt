@@ -69,6 +69,12 @@ alias rg=ranger
 
 完成！
 
+#################################################################################################
+# 其他软件
+
+brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump the_silver_searcher ripgrep
+
+
 
 
 
