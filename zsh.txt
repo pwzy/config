@@ -31,6 +31,7 @@ plugins=(
             zsh-autosuggestions 
             zsh-syntax-highlighting
             autojump
+            colored-man-pages
         )
         
 # 编辑 /root/.oh-my-zsh/themes/agnoster.zsh-theme
