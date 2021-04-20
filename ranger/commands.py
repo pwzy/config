@@ -24,7 +24,7 @@ class fzf_select(Command):
 
         if fd is not None:
             hidden = ('--hidden' if self.fm.settings.show_hidden else '')
-            exclude = "--no-ignore-vcs -E={.git,.idea,.sass-cache,node_modules,build,.local,Library,.wine,.vim,anaconda3,go}"
+            exclude = "--no-ignore-vcs -E={.git,.idea,.sass-cache,node_modules,build,.local,Library,.wine,.vim,.cache,anaconda3,.vscode,.tldr,.pylint.d}"
             only_directories = ('--type directory' if self.quantifier else '')
             fzf_default_command = '{} --follow {} {} {} --color=always . ~'.format(
                 fd, hidden, exclude, only_directories
