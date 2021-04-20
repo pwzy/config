@@ -3,10 +3,17 @@
 1. 设置TERM类型，避免tmux中使用vim颜色错乱
 export TERM=xterm-256color
 
-2. 下载tmux-powerline
+2. 绑定快捷命令
+alias ta="tmux attach-session -t "
+alias tn="tmux new-session -t "
+alias tk="tmux kill-session -t "
+alias tl="tmux ls"
+alias tp="tmuxp load "
+
+3. 下载tmux-powerline
 https://github.com/erikw/tmux-powerline
 
-3. 更改  tmux-powerline/themes/default.sh 中的powerline的前景与背景颜色，
+4. 更改  tmux-powerline/themes/default.sh 中的powerline的前景与背景颜色，
 可通过运行 tmux-powerline/color_palette.sh 观察颜色设置，然后更改状态栏组件。
 
 # 进行tmux-powerline的配置
