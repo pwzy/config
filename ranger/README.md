@@ -5,6 +5,8 @@ alias rg="ranger"
 ranger --copy-config=all
 
 # 添加以下内容
+map fzf fzf_select
+
 map gd cd ~/Desktop
 map gb cd ~/.config/
 map eb shell nvim ~/.bashrc
