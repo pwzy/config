@@ -1,12 +1,12 @@
 ######################################################################################
 # fzf setting
 ######################################################################################
-
-export FZF_DEFAULT_COMMAND="fd --hidden --follow -E={.git,.idea,.sass-cache,node_modules,build} \
-    -E={.local,Library,.wine,.vim,anaconda3} \
-    . \
-    ~"
-
+export fzf_common="-E={.git,.idea,.sass-cache,node_modules,build,.local,Library,.wine,.vim,.cache,anaconda3}"
+# export FZF_DEFAULT_COMMAND="fd --hidden --follow -E={.git,.idea,.sass-cache,node_modules,build} \
+#     -E={.local,Library,.wine,.vim,.cache,anaconda3} \
+#     . \
+#     ~"
+export FZF_DEFAULT_COMMAND="fd --hidden --follow $fzf_common . ~" 
 # Use \ as the trigger sequence instead of the default **
 export FZF_COMPLETION_TRIGGER='\'
 # Default view mode
@@ -23,20 +23,20 @@ export FZF_CTRL_T_OPTS=$FZF_DEFAULT_OPTS
 # - See the source code (completion.{bash,zsh}) for the details.
 # use for vim**<tab>
 _fzf_compgen_path() {
-  fd --hidden --follow --exclude={.git,.idea,.sass-cache,node_modules,build} \
-    --exclude={.local,Library,.wine,.vim,anaconda3} \
-    . ~ "$1"
+  # fd --hidden --follow --exclude={.git,.idea,.sass-cache,node_modules,build} \
+  #   --exclude={.local,Library,.wine,.vim,.cache,anaconda3} \
+  #   . ~ "$1"
+  fd --hidden --follow $fzf_common . ~ "$1"
 }
 
 # Use fd to generate the list for directory completion
 # use for cd**<tab>
 _fzf_compgen_dir() {
   # fd --type d --hidden --follow --exclude ".git" . "$1"
-  # fd --type d --hidden --follow --exclude ".git" . "$1"
-  fd --hidden --follow --exclude={.git,.idea,.sass-cache,node_modules,build} \
-    --exclude={.local,Library,.wine,.vim,anaconda3} \
-    --type d . ~ "$1"
-  # $FZF_COMMON_SETTING --type d . "$1"
+  # fd --hidden --follow --exclude={.git,.idea,.sass-cache,node_modules,build} \
+  #   --exclude={.local,Library,.wine,.cache,.vim,anaconda3} \
+  #   --type d . ~ "$1"
+  fd --hidden --follow $fzf_common --type d . ~ "$1"
 }
 
 # (EXPERIMENTAL) Advanced customization of fzf options via _fzf_comprun function
