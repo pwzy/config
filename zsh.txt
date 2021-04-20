@@ -78,14 +78,15 @@ brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump the_silver_se
 # fzf setting
 ######################################################################################
 
-export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude={.git,.idea,.sass-cache,node_modules,build} \
-    --exclude={.local,Library,.wine,.vim,anaconda3} \
-    --type f ."
+export FZF_DEFAULT_COMMAND="fd --hidden --follow -E={.git,.idea,.sass-cache,node_modules,build} \
+    -E={.local,Library,.wine,.vim,anaconda3} \
+    --type f . \
+    ~"
 
 # Use \ as the trigger sequence instead of the default **
 export FZF_COMPLETION_TRIGGER='\'
 # Default view mode
-export FZF_DEFAULT_OPTS='--height 60% --layout=reverse --border --preview "(highlight -O ansi {} || bat --color=always {}) 2> /dev/null | head -500"'
+export FZF_DEFAULT_OPTS='-m --height 80% --layout=reverse --border --preview "bat --color=always {} 2> /dev/null | head -500"'
 # Options to fzf command
 export FZF_COMPLETION_OPTS='--border --info=inline'
 
@@ -98,10 +99,9 @@ export FZF_CTRL_T_OPTS=$FZF_DEFAULT_OPTS
 # - See the source code (completion.{bash,zsh}) for the details.
 # use for vim**<tab>
 _fzf_compgen_path() {
-  # fd --hidden --follow --exclude ".git" . "$1"
   fd --hidden --follow --exclude={.git,.idea,.sass-cache,node_modules,build} \
-    --exclude={.local,Library,.wine,.vim,anaconda3} . "$1"
-  # $FZF_COMMON_SETTING . "$1"
+    --exclude={.local,Library,.wine,.vim,anaconda3} \
+    . ~ "$1"
 }
 
 # Use fd to generate the list for directory completion
@@ -110,7 +110,8 @@ _fzf_compgen_dir() {
   # fd --type d --hidden --follow --exclude ".git" . "$1"
   # fd --type d --hidden --follow --exclude ".git" . "$1"
   fd --hidden --follow --exclude={.git,.idea,.sass-cache,node_modules,build} \
-    --exclude={.local,Library,.wine,.vim,anaconda3} . "$1"
+    --exclude={.local,Library,.wine,.vim,anaconda3} \
+    --type d . ~ "$1"
   # $FZF_COMMON_SETTING --type d . "$1"
 }
 
