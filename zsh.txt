@@ -73,5 +73,7 @@ alias rg=ranger
 
 # 其他软件安装
 ####################################################################################################################################
-brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump the_silver_searcher ripgrep node tldr lazygit lazydocker glances
+brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump   \
+            the_silver_searcher ripgrep node tldr lazygit lazydocker \
+            glances tree
 ####################################################################################################################################
