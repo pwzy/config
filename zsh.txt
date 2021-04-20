@@ -80,7 +80,7 @@ brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump the_silver_se
 
 export FZF_DEFAULT_COMMAND="fd --hidden --follow -E={.git,.idea,.sass-cache,node_modules,build} \
     -E={.local,Library,.wine,.vim,anaconda3} \
-    --type f . \
+    . \
     ~"
 
 # Use \ as the trigger sequence instead of the default **
