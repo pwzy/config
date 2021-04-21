@@ -64,6 +64,8 @@ pip install pdftotext
 
 # 视频预览
 参考：https://github.com/ranger/ranger/wiki/Video-Previews
+vim /Users/pwzy/.config/ranger/rc.conf  
+关闭 set preview_script 的注释
 下载并编译： https://github.com/dirkvdb/ffmpegthumbnailer
 放到.local/bin 目录下，设置环境变量 export PATH="/Users/pwzy/.local/bin:$PATH"
 
