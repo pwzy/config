@@ -74,7 +74,10 @@ alias rg=ranger
 # 其他软件安装
 ####################################################################################################################################
 brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump   \
-            the_silver_searcher ripgrep node tldr lazygit lazydocker \
-            glances tree brew install ShellCheck cheat browsh navi   \
-            nnn z zoxide cloc gitopen hub GoAccess exa
+            ag ripgrep node tldr lazygit lazydocker cloc hub exa     \
+            glances tree ShellCheck cheat GoAccess navi nnn z zoxide \
+            
+            
+npm install --global git-open 
+github下载： browsh
 ####################################################################################################################################
