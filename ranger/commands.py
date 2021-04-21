@@ -23,10 +23,13 @@ class fzf_select(Command):
             fd = 'fd'
 
         if fd is not None:
-            hidden = ('--hidden' if self.fm.settings.show_hidden else '')
+            hidden = ('--hidden')
             exclude = "--no-ignore-vcs -E={.git,.idea,.sass-cache,node_modules,build,.local,Library,.wine,.vim,.cache,anaconda3,.vscode,.tldr,.pylint.d}"
             only_directories = ('--type directory' if self.quantifier else '')
-            fzf_default_command = '{} --follow {} {} {} --color=always . ~'.format(
+            fzf_default_command = '{} --follow {} {} {} --color=always . \
+            ~/.config ~/Downloads ~/Desktop ~/project ~/Project ~/.local ~/.ssh ~/Pictures ~/tmux-powerline ~/frp    \
+            ~/.zshrc ~/.bashrc ~/.bash_profile                                                                       \
+            '.format(
                 fd, hidden, exclude, only_directories
             )
         else:
