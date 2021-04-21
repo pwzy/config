@@ -76,8 +76,11 @@ alias rg=ranger
 brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump   \
             ag ripgrep node tldr lazygit lazydocker cloc hub exa     \
             glances tree ShellCheck cheat GoAccess navi nnn z zoxide \
-            w3m chafa powerline ffmpeg ffprobe google-chrome 
+            w3m chafa ffmpeg tmux docker git texlab ctags annie bear \
+            youtube-dl
+             
             
 npm install --global git-open 
 github下载： browsh
+sudo apt install aptitude powerline ffprobe
 ####################################################################################################################################
