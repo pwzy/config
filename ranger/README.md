@@ -48,6 +48,8 @@ sudo fc-cache -fv # 刷新系统字体缓存
 
 # 图片预览
 添加环境变量： export TERM=xterm-kitty
+安装pip和pillow库  sudo /usr/bin/python  -m ensurepip 
+sudo /usr/bin/python -m pip install pillow 
 然后：vim /Users/pwzy/.config/ranger/rc.conf    
 设置 set preview_images true
 
