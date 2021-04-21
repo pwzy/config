@@ -76,7 +76,7 @@ alias rg=ranger
 brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump   \
             ag ripgrep node tldr lazygit lazydocker cloc hub exa     \
             glances tree ShellCheck cheat GoAccess navi nnn z zoxide \
-            
+            w3m chafa powerline ffmpeg ffprobe google-chrome 
             
 npm install --global git-open 
 github下载： browsh
