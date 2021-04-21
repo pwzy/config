@@ -75,5 +75,6 @@ alias rg=ranger
 ####################################################################################################################################
 brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump   \
             the_silver_searcher ripgrep node tldr lazygit lazydocker \
-            glances tree
+            glances tree brew install ShellCheck cheat browsh navi   \
+            nnn z zoxide cloc gitopen hub GoAccess exa
 ####################################################################################################################################
