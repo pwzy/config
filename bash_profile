@@ -13,7 +13,11 @@ alias tk="tmux kill-session -t "
 alias tl="tmux ls"
 alias tp="tmuxp load "
 alias help="run-help"
-alias cat=ccat
+alias cat=bat
+alias lg=lazygit
+alias ft="fzf-tmux"
+alias ll="exa -l --icons " 
+alias ls="exa --icons "
 
 alias speed="wget -c https://developer.download.nvidia.com/compute/cuda/11.1.1/local_installers/cuda_11.1.1_455.32.00_linux.run"
 
@@ -23,10 +27,6 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 export PATH="/Users/pwzy/script/:$PATH"
-
-# java environment 
-export PATH="/Users/pwzy/maven/bin:$PATH"
-
 
 # 设置终端走代理
 export http_proxy="http://localhost:7890"
@@ -106,7 +106,5 @@ export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # compile file quickly 
 alias makefile="echo -e 'a.out: *.cpp \n\\tclang++ -g \`pkg-config --libs --cflags opencv4\` *.cpp -o a.out' > makefile"
-
-alias jing="ssh jing@10.16.142.1 "
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
