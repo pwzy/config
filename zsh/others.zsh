@@ -12,8 +12,8 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+# conda config --set auto_activate_base false
+#
 
 
-eval $(thefuck --alias)
 
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
