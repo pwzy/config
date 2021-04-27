@@ -15,5 +15,12 @@ unset __conda_setup
 # conda config --set auto_activate_base false
 #
 
-
+# # setting for ubuntu
+# # setting for brew
+# echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/jing/.zprofile
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#
+# # setting for clash
+# alias clash="bash /home/jing/.local/share/clash/clash.sh"
+# export clashdir="/home/jing/.local/share/clash"
 
