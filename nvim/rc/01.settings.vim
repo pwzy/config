@@ -181,9 +181,9 @@ set scrolloff=3
 set smartindent
 
 " 设置补全弹出的菜单颜色 参考：https://www.dazhuanlan.com/2019/08/30/5d6870952c2e0/
-colorscheme murphy
-hi Pmenu ctermfg=black ctermbg=gray  guibg=#444444
-hi PmenuSel ctermfg=LightGray ctermbg=DarkRed guibg=#777777 guifg=LightYellow
+" colorscheme murphy
+" hi Pmenu ctermfg=black ctermbg=gray  guibg=#444444
+" hi PmenuSel ctermfg=LightGray ctermbg=DarkRed guibg=#777777 guifg=LightYellow
 
 
 "" 小插件的设置开始 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
