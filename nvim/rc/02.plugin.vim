@@ -83,8 +83,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " 增强 Vim 的书签(标记)跳转功能
 Plug 'kshenoy/vim-signature'
-" 有旧插件的情况下，下载新的插件并重命名以避免冲突
-Plug 'ascenator/L9', {'name': 'newL9'}
 " C++ 关键字和库高亮
 Plug 'octol/vim-cpp-enhanced-highlight'
 " vim显示缩进线
