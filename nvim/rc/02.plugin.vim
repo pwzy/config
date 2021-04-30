@@ -80,11 +80,21 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'Chiel92/vim-autoformat'
 " 快速查找 " 用fzf代替
 " Plug 'rking/ag.vim'
+" C++ 关键字和库高亮
+" Plug 'octol/vim-cpp-enhanced-highlight'
+" 状态栏主题
+" Plug 'vim-airline/vim-airline-themes'
+" 括号配对
+" Plug 'jiangmiao/auto-pairs'
+" 配色方案
+" Plug 'altercation/vim-colors-solarized' 
+" vim 调试插件
+" Plug 'puremourning/vimspector'
+
+
 
 " 增强 Vim 的书签(标记)跳转功能
 Plug 'kshenoy/vim-signature'
-" C++ 关键字和库高亮
-Plug 'octol/vim-cpp-enhanced-highlight'
 " vim显示缩进线
 Plug 'nathanaelkane/vim-indent-guides'
 " 模糊搜索
@@ -92,8 +102,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " 状态栏增强显示
 Plug 'bling/vim-airline'
-" 状态栏主题
-Plug 'vim-airline/vim-airline-themes'
 " 快速移动
 Plug 'Lokaltog/vim-easymotion'
 " 多光标操作
@@ -102,18 +110,12 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'mhinz/vim-startify'
 " 快速选择相领的对象
 Plug 'vim-scripts/wildfire.vim'
-" 括号配对
-Plug 'jiangmiao/auto-pairs'
 " 更改成对符号
 Plug 'tpope/vim-surround'
 " 批量注释与反注释
 Plug 'scrooloose/nerdcommenter'
 " 大纲式导航
 Plug 'majutsushi/tagbar'
-" 配色方案
-Plug 'altercation/vim-colors-solarized' 
-" vim 调试插件
-Plug 'puremourning/vimspector'
 " 高亮单词
 Plug 'lfv89/vim-interestingwords'
 " 管理日常插件
