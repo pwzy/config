@@ -82,8 +82,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'rking/ag.vim'
 " C++ 关键字和库高亮
 " Plug 'octol/vim-cpp-enhanced-highlight'
-" 状态栏主题
-" Plug 'vim-airline/vim-airline-themes'
 " 括号配对
 " Plug 'jiangmiao/auto-pairs'
 " 配色方案
@@ -102,6 +100,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " 状态栏增强显示
 Plug 'bling/vim-airline'
+" 状态栏主题
+Plug 'vim-airline/vim-airline-themes'
 " 快速移动
 Plug 'Lokaltog/vim-easymotion'
 " 多光标操作
