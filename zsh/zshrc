@@ -10,5 +10,5 @@ source ~/.config/zsh/env.zsh
 source ~/.config/zsh/aliases.zsh
 source ~/.config/zsh/fzf.zsh
 source ~/.config/zsh/others.zsh
-
+source ~/.config/zsh/zim-plugin.zsh
 
