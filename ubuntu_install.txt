@@ -57,3 +57,31 @@ sudo gedit ~/.zshrc
 # 加入
 # setting for anaconda python  一定要全路径不能用～代表家目录
 export PATH="/home/jing/anaconda3/bin:$PATH"
+
+
+##############################################################################################
+# 添加自启动脚本
+##############################################################################################
+1. 在 /etc/systemd/system 目录下创建软链接
+  sudo ln -s /lib/systemd/system/rc-local.service /etc/systemd/system/
+2. 修改服务文件
+  sudo vim /lib/systemd/system/rc-local.service
+3. 创建自启动脚本
+  sudo vim /etc/rc.local
+4. 并添加以下内容： #不能添加阻塞进程 不然开机卡死
+  #!/bin/sh
+  echo "看到这行字，说明添加自启动脚本成功。" > /usr/local/test.log
+  exit 0
+5. 给rc.local加上权限
+  sudo chmod 755 /etc/rc.local
+6. 测试脚本是否成功
+  systemctl restart rc-local
+
+##############################################################################################
+# 其他设置
+##############################################################################################
+
+
+
+
+
