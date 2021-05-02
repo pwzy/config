@@ -64,8 +64,14 @@ export PATH="/home/jing/anaconda3/bin:$PATH"
 ##############################################################################################
 1. 在 /etc/systemd/system 目录下创建软链接
   sudo ln -s /lib/systemd/system/rc-local.service /etc/systemd/system/
-2. 修改服务文件
+2. 修改服务文件，
   sudo vim /lib/systemd/system/rc-local.service
+  在文件尾部中添加：
+  
+  [Install]
+  WantedBy=multi-user.target
+  Alias=rc-local.service
+  
 3. 创建自启动脚本
   sudo vim /etc/rc.local
 4. 并添加以下内容： #不能添加阻塞进程 不然开机卡死
