@@ -93,6 +93,10 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 
 
+
+" 安装主题
+Plug 'joshdick/onedark.vim'
+Plug 'arcticicestudio/nord-vim'
 " 增强 Vim 的书签(标记)跳转功能
 Plug 'kshenoy/vim-signature'
 " vim显示缩进线
