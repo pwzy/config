@@ -88,6 +88,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'altercation/vim-colors-solarized' 
 " vim 调试插件
 " Plug 'puremourning/vimspector'
+" 管理日常插件
+" Plug 'vimwiki/vimwiki'
 
 
 
@@ -118,8 +120,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'majutsushi/tagbar'
 " 高亮单词
 Plug 'lfv89/vim-interestingwords'
-" 管理日常插件
-Plug 'vimwiki/vimwiki'
 " 强大插件
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " 安装中文帮助文档
