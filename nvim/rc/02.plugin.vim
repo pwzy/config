@@ -128,6 +128,9 @@ Plug 'yianwillis/vimcdoc'
 Plug 'lervag/vimtex'
 " 配色表
 Plug 'guns/xterm-color-table.vim'
+" 按键提示插件
+Plug 'liuchengxu/vim-which-key'
+
 
 "" 插件在此之前  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 call plug#end()
