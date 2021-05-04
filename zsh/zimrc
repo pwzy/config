@@ -41,7 +41,7 @@ zmodule zsh-users/zsh-history-substring-search
 
 
 zmodule eriner
-zmodule magicmace
+# zmodule magicmace
 zmodule zdharma/fast-syntax-highlighting
 zmodule supercrabtree/k
 zmodule hlissner/zsh-autopair
