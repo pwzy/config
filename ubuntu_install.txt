@@ -82,6 +82,9 @@ export PATH="/home/jing/anaconda3/bin:$PATH"
   sudo chmod 755 /etc/rc.local
 6. 测试脚本是否成功
   systemctl restart rc-local
+  
+##############################
+(cd /home/jing && nohup ./frp/frpc -c ./frp/frpc.ini &)
 
 ##############################################################################################
 # 其他设置
