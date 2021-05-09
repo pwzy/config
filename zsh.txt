@@ -83,4 +83,11 @@ brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump   \
 npm install --global git-open 
 github下载： browsh
 sudo apt install aptitude powerline ffprobe
+
+######################################################################
+注意：
+配置fzf要根据官网进行安装，需要绑定fzf按键 如下安装
+brew install fzf
+# To install useful key bindings and fuzzy completion:
+$(brew --prefix)/opt/fzf/install
 ####################################################################################################################################
