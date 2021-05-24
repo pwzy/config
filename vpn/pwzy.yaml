@@ -34,7 +34,7 @@ secret: ''
 
 
 proxies:
-  - {"name":"pwzy_hongkong|V2ray","type":"vmess","server":"101.32.14.73","port":50276,"uuid":"e7a7096b-e418-43a2-a19d-2dc432b00264","alterId":0,"cipher":"auto","ws-headers":{"Host":"101.32.14.73"}}
+  - {"name":"pwzy_hongkong|V2ray","type":"vmess","server":"101.32.14.74","port":50276,"uuid":"e7a7096b-e418-43a2-a19d-2dc432b00264","alterId":0,"cipher":"auto","ws-headers":{"Host":"101.32.14.74"}}
 proxy-groups:
 -
   name: Proxy
