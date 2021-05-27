@@ -144,8 +144,10 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 # setting for proxy
 c.content.proxy = "http://127.0.0.1:7890"
 # Startseite
-c.url.default_page = "https://www.google.com"
-c.url.start_pages = "https://www.google.com"
-# setting defalut zoom 
-c.zoom.default=200
+#  c.url.searchengines = {"DEFAULT":"https://google.com/?q={}"}
+c.url.searchengines = {"DEFAULT":"https://baidu.com/s?wd={}"}
+c.url.default_page = "https://www.baidu.com"
+c.url.start_pages = "https://www.baidu.com"
+
+c.zoom.default=250
 
