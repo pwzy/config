@@ -146,3 +146,6 @@ c.content.proxy = "http://127.0.0.1:7890"
 # Startseite
 c.url.default_page = "https://www.google.com"
 c.url.start_pages = "https://www.google.com"
+# setting defalut zoom 
+c.zoom.default=200
+
