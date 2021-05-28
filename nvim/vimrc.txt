@@ -1,0 +1,40 @@
+" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+" 插件设置
+call plug#begin('~/.local/share/nvim/plugged')
+
+Plug 'preservim/vim-colors-pencil'
+
+call plug#end()
+" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+set nu
+" 去掉vi兼容性
+set nocompatible 
+" 设置退格正常工作
+set backspace=indent,eol,start
+" 设置高亮
+set hlsearch
+" 设置忽略大小写
+set ignorecase
+" 设置增量搜索，实时高亮
+set incsearch
+" 右下角显示标尺
+set ruler 
+" 输入的命令显示出来，看的清楚些
+set showcmd 
+" 高亮显示匹配的括号
+set showmatch
+" 匹配括号高亮的时间（单位是十分之一秒）
+set matchtime=1
+" 光标移动到buffer的顶部和底部时保持3行距离
+set scrolloff=3
+" 可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位）
+set mouse=a
+
+
+" 设置前缀
+let mapleader="\<Space>"
+let maplocalleader=","
+
+" 映射保存文件
+nnoremap <leader>ss :w<CR>
