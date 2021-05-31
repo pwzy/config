@@ -56,7 +56,7 @@ vhost_https_port = 4438
 客户端配置：frpc.ini
 
 [common]
-server_addr = 149.129.53.255
+server_addr = 1.1.1.1
 server_port = 7000
 
 [ssh]
@@ -65,11 +65,29 @@ local_ip = 127.0.0.1
 local_port = 22
 remote_port = 6000
 
+[visdom]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 8097
+remote_port = 8097
+
+[jupyter]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 8888
+remote_port = 8888
+
 [webtest]
 type = http
 local_ip = 127.0.0.1
 local_port = 80
-custom_domains = www.jixuecao.top
+custom_domains = jiuecao.top
+
+[clash]
+type = http
+local_ip = 127.0.0.1
+local_port = 7890
+custom_domains = jiuecao.top
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 客户端配置nginx服务：
