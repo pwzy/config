@@ -7,3 +7,5 @@
 		https://github.com/xiaoming2028/FreePAC
 		直接运行：
 		bash <(curl -s -L https://git.io/v2ray.sh)
+
+ssh -D 9990 -CTqnN ubuntu@mmd -f
