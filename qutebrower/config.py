@@ -143,6 +143,7 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 #######################################################################
 # setting for proxy
 c.content.proxy = "http://127.0.0.1:7890"
+c.content.proxy = "socks5://127.0.0.1:9990"
 # Startseite
 #  c.url.searchengines = {"DEFAULT":"https://google.com/?q={}"}
 c.url.searchengines = {"DEFAULT":"https://baidu.com/s?wd={}"}
