@@ -20,7 +20,8 @@
 # 设置i3
 ########################################################################################################################
 1. 启用fcitx5
-  exec_always fcitx5
+  exec_always fcitx5 
+  exec_always albert
 2. 改变打开的默认终端
   bindsym $mod+Return exec kitty
 3. 设置各工作区名称
@@ -28,6 +29,22 @@
   set $ws2 "2:Emacs"
   set $ws3 "3:FireFox"
   ...
-
+4. 安装文件搜索器
+  sudo pacman -S albert
+5. 网易云音乐最漂亮的第三方客户端iease-music！
+  sudo pacman -S iease-music
+6. 设置窗口半透明+毛玻璃效果
+  卸载原有的compton sudo pacman -R compton
+  若遇到依赖问题无法卸载，则 sudo pacman -Rc compton
+  安装compton sudo pacman -R compton
+7. 使用 deepin-file-manager 来代替默认的 pcmanfm
+  sudo pacman -S deepin-file-manager
+9. 窗口之间的间距通过i3-gaps来设置
+  sudo pacman -S i3-gaps
+  在配置文件中加入：
+  gaps inner 16
+  gaps outer 0
+10. 亮度调节
+  sudo pacman -S xorg-xbacklight 
 
 
