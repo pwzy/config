@@ -46,5 +46,9 @@
   gaps outer 0
 10. 亮度调节
   sudo pacman -S xorg-xbacklight 
-
+11. 配置rofi
+  sudo pacman -S rofi
+  在i3中配置
+  bindsym $mod+d exec --no-startup-id rofi -show drun -theme fancy
+12. 
 
