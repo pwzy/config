@@ -19,6 +19,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'jistr/vim-nerdtree-tabs'
 " 显示git文件变更，会遮挡左边调试信息
 " Plug 'Xuyuanp/nerdtree-git-plugin'
+" 大纲式导航
+" Plug 'majutsushi/tagbar'
 " 全局搜索
 " Plug 'vim-scripts/ag.vim' 
 " 更强大的全局搜索，可异步搜索
@@ -131,8 +133,6 @@ Plug 'vim-scripts/wildfire.vim'
 Plug 'tpope/vim-surround'
 " 批量注释与反注释
 Plug 'scrooloose/nerdcommenter'
-" 大纲式导航
-Plug 'majutsushi/tagbar'
 " 高亮单词
 Plug 'lfv89/vim-interestingwords'
 " 安装中文帮助文档
@@ -146,6 +146,8 @@ Plug 'liuchengxu/vim-which-key'
 " neovim-lsp补全插件
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
+" tags导航
+Plug 'liuchengxu/vista.vim'
 
 
 "" 插件在此之前  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
