@@ -110,6 +110,8 @@ Plug 'preservim/vim-colors-pencil'
 Plug 'ryanoasis/vim-devicons'
 " 类似于nerdtree的文件管理器
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+" tags导航
+Plug 'liuchengxu/vista.vim'
 " 增强 Vim 的书签(标记)跳转功能
 Plug 'kshenoy/vim-signature'
 " vim显示缩进线
@@ -144,10 +146,11 @@ Plug 'guns/xterm-color-table.vim'
 " 按键提示插件
 Plug 'liuchengxu/vim-which-key'
 " neovim-lsp补全插件
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'zchee/deoplete-jedi'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
-" tags导航
-Plug 'liuchengxu/vista.vim'
+
 
 
 "" 插件在此之前  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
