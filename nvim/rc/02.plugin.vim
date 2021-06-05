@@ -112,6 +112,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 " tags导航
 Plug 'liuchengxu/vista.vim'
+" 查找文件和搜索
+Plug 'liuchengxu/vim-clap'
 " 增强 Vim 的书签(标记)跳转功能
 Plug 'kshenoy/vim-signature'
 " vim显示缩进线
