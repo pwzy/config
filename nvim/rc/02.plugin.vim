@@ -19,8 +19,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'jistr/vim-nerdtree-tabs'
 " 显示git文件变更，会遮挡左边调试信息
 " Plug 'Xuyuanp/nerdtree-git-plugin'
-" 大纲式导航
-" Plug 'majutsushi/tagbar'
 " 全局搜索
 " Plug 'vim-scripts/ag.vim' 
 " 更强大的全局搜索，可异步搜索
@@ -112,7 +110,8 @@ Plug 'preservim/vim-colors-pencil'
 Plug 'ryanoasis/vim-devicons'
 " 类似于nerdtree的文件管理器
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
-" tags导航
+" 大纲式导航
+Plug 'majutsushi/tagbar'
 Plug 'liuchengxu/vista.vim'
 " 查找文件和搜索
 Plug 'liuchengxu/vim-clap'
