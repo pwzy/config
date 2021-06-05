@@ -9,6 +9,7 @@
 let g:coc_global_extensions = [
     \ 'coc-explorer',
     \ 'coc-jedi',
+    \ 'coc-pyright',
     \ 'coc-json',
     \ 'coc-yank',
     \ 'coc-lists',
@@ -26,6 +27,7 @@ let g:coc_global_extensions = [
     \ ]
 " 参考： https://github.com/pappasam/coc-jedi 的FAQ / Debugging 部分
 "   'coc-jedi' 需要在coc-setting.json中设置jedi-language-server的路径
+" coc-pyright 不能进行opencv的补全
 
 " 设置文件未保存coc插件跳转时不报错
 set hidden
