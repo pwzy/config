@@ -90,6 +90,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'puremourning/vimspector'
 " 管理日常插件
 " Plug 'vimwiki/vimwiki'
+" 强大插件
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 
 
@@ -129,8 +131,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'majutsushi/tagbar'
 " 高亮单词
 Plug 'lfv89/vim-interestingwords'
-" 强大插件
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " 安装中文帮助文档
 Plug 'yianwillis/vimcdoc'
 " latex 插件
@@ -139,6 +139,9 @@ Plug 'lervag/vimtex'
 Plug 'guns/xterm-color-table.vim'
 " 按键提示插件
 Plug 'liuchengxu/vim-which-key'
+" neovim-lsp补全插件
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
 
 
 "" 插件在此之前  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
