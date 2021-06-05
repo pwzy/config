@@ -73,6 +73,33 @@ set scrolloff=3
 set mouse=a
 " 设置按键响应 使用系统剪切板，内容存到匿名寄存器
 set clipboard=unnamed
+" 高亮显示当前行/列
+set cursorline
+set cursorcolumn
+" 设置当文件被改动时自动载入
+set autoread
+" 设置文件显示编码
+set encoding=utf-8
+" 设置文件转存编码
+set fenc=utf-8
+" 设置从不备份，禁止生成临时文件
+set nobackup
+set noswapfile
+" 参考：https://segmentfault.com/a/1190000021133524
+" 自动缩进时,缩进长度为4
+set shiftwidth=4
+" 选项只修改 tab 字符的显示宽度，不修改按 Tab 键的行为
+set tabstop=4
+" softtabstop 选项修改按 Tab 键的行为，不修改 tab 字符的显示宽度。具体行为跟 tabstop 选项值有关
+" softtabstop的值为负数,会使用shiftwidth的值,两者保持一致,方便统一缩进.
+set softtabstop=4
+" expandtab 选项把插入的 tab 字符替换成特定数目的空格。具体空格数目跟 tabstop 选项值有关
+set expandtab
+" 智能添加和删除行首空白
+set smarttab
+" 为程序提供智能缩进
+set smartindent
+
 " 设置前缀
 let mapleader="\<Space>"
 let maplocalleader=","
