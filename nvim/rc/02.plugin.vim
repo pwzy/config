@@ -104,6 +104,10 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'cocopon/pgmnt.vim'
 Plug 'preservim/vim-colors-pencil'
 
+" 图标icons插件
+Plug 'ryanoasis/vim-devicons'
+" 类似于nerdtree的文件管理器
+Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 " 增强 Vim 的书签(标记)跳转功能
 Plug 'kshenoy/vim-signature'
 " vim显示缩进线
