@@ -8,6 +8,7 @@
 
 let g:coc_global_extensions = [
     \ 'coc-explorer',
+    \ 'coc-jedi',
     \ 'coc-json',
     \ 'coc-yank',
     \ 'coc-lists',
@@ -23,7 +24,8 @@ let g:coc_global_extensions = [
     \ 'coc-clangd',
     \ 'coc-cmake',
     \ ]
-"   'coc-python' 安装需要 pip install jedi>=0.17
+" 参考： https://github.com/pappasam/coc-jedi 的FAQ / Debugging 部分
+"   'coc-jedi' 需要在coc-setting.json中设置jedi-language-server的路径
 
 " 设置文件未保存coc插件跳转时不报错
 set hidden
