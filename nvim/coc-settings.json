@@ -7,5 +7,7 @@
     "explorer.keyMappings": {
         "<cr>": ["expandable?", "expand", "open"],
         "v": "open:vsplit"
-    }
+    },
+    
+    "jedi.executable.command": "/Users/pwzy/anaconda3/envs/torch_1_8/bin/jedi-language-server"
 }
