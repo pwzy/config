@@ -92,9 +92,11 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'puremourning/vimspector'
 " 管理日常插件
 " Plug 'vimwiki/vimwiki'
-" 强大插件
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+" neovim-lsp补全插件
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'zchee/deoplete-jedi'
+" Plug 'neovim/nvim-lspconfig'
+" Plug 'hrsh7th/nvim-compe'
 
 
 
@@ -147,11 +149,8 @@ Plug 'lervag/vimtex'
 Plug 'guns/xterm-color-table.vim'
 " 按键提示插件
 Plug 'liuchengxu/vim-which-key'
-" neovim-lsp补全插件
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Plug 'zchee/deoplete-jedi'
-Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-compe'
+" 强大插件
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 
 
