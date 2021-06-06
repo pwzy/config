@@ -86,8 +86,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'jiangmiao/auto-pairs'
 " 配色方案
 " Plug 'altercation/vim-colors-solarized' 
-" vim 调试插件
-" Plug 'puremourning/vimspector'
 " 管理日常插件
 " Plug 'vimwiki/vimwiki'
 " neovim-lsp补全插件
@@ -150,6 +148,9 @@ Plug 'guns/xterm-color-table.vim'
 Plug 'liuchengxu/vim-which-key'
 " 强大插件
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" vim 调试插件
+Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-python'}
+
 
 
 
