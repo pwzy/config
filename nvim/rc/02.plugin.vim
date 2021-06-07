@@ -150,6 +150,8 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " vim 调试插件
 Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-python'}
+" 浮动终端
+Plug 'voldikss/vim-floaterm'
 
 
 
