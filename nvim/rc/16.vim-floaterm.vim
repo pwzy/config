@@ -9,6 +9,9 @@ let g:floaterm_height=0.2
 " 2: Always close floaterm window
 let g:floaterm_autoclose=2
 
+" 设置打开终端是否自动进入插入模式
+let g:floaterm_autoinsert=v:true
+
 " 打开快捷键
-let g:floaterm_keymap_new = '<Leader>ft'
+let g:floaterm_keymap_toggle = '<Leader>ft'
 
