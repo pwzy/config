@@ -1,7 +1,7 @@
 " 关闭窗口的浮动
 let g:floaterm_wintype='split'
 " 设置窗口的高度
-let g:floaterm_height=0.2
+let g:floaterm_height=0.3
 
 " 设置关闭窗口的方式
 " 0: Always do NOT close floaterm window
