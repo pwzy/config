@@ -42,3 +42,7 @@ autocmd bufenter * if winnr("$") == 1 && vista#sidebar#IsOpen() | execute "norma
 
 nnoremap <leader>t :Vista!!<CR>
 
+" 需要安装ctags
+" brew tap universal-ctags/universal-ctags
+" brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+
