@@ -110,6 +110,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 " 大纲式导航
 Plug 'majutsushi/tagbar'
+" 更强的大纲式导航，需要到github安装universal-ctags。
 Plug 'liuchengxu/vista.vim'
 " 查找文件和搜索
 Plug 'liuchengxu/vim-clap'
