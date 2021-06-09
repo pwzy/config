@@ -154,6 +154,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-python'}
 " 浮动终端
 Plug 'voldikss/vim-floaterm'
+" 淡出非活动缓冲区，并保留你的语法突出显示！
+Plug 'TaDaa/vimade'
+
 
 
 
