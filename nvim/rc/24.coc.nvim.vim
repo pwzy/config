@@ -26,7 +26,6 @@ let g:coc_global_extensions = [
     \ 'coc-clangd',
     \ 'coc-cmake',
     \ 'coc-diagnostic',
-    \ 'coc-fzf-preview',
     \ 'coc-sh',
     \ ]
 
