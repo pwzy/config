@@ -1,101 +1,6 @@
 call plug#begin('~/.local/share/nvim/plugged')
 "" 插件在此之后  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-" Plug 'jnurmine/Zenburn'
-" Plug 'altercation/vim-colors-solarized'
-" Plug 'tomasr/molokai'
-" Plug 'vim-scripts/phd'
-" Plug 'iCyMind/NeoSolarized'
-" Plug 'flazz/vim-colorschemes'
-" 文本搜索
-" Plug 'jremmen/vim-ripgrep'
-" 模糊搜索文件  " 可以用fzf插件代替
-" Plug 'ctrlpvim/ctrlp.vim'  
-" 前端开发
-" Plug 'mattn/emmet-vim'
-" 树形目录 " 可以用coc-explore代替
-" Plug 'scrooloose/nerdtree'
-" 人性化nerdtree  使用tab键切换窗口与目录树
-" Plug 'jistr/vim-nerdtree-tabs'
-" 显示git文件变更，会遮挡左边调试信息
-" Plug 'Xuyuanp/nerdtree-git-plugin'
-" 全局搜索
-" Plug 'vim-scripts/ag.vim' 
-" 更强大的全局搜索，可异步搜索
-" Plug 'dyng/ctrlsf.vim'
-" XML编辑
-" Plug 'vim-scripts/xml.vim'
-" git diff 显示，用于git版本控制
-" Plug 'airblade/vim-gitgutter'
-" git包装器
-" Plug 'tpope/vim-fugitive'
-" 异步 运行程序
-" Plug 'tpope/vim-dispatch'
-" Plug 'skywind3000/asyncrun.vim'
-" Plug 'neomake/neomake'
-" 翻页平滑滚动 " 开启后远程连接会卡
-" Plug 'yonchu/accelerated-smooth-scroll'
-" Go 开发
-" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-" 片段补全
-" Plug 'Shougo/neosnippet.vim'
-" Plug 'Shougo/neosnippet-snippets'
-" 异步语法检查
-" Plug 'dense-analysis/ale'
-" PEP8语法检查
-" Plug 'nvie/vim-flake8'
-" python代码折叠
-" Plug 'tmhedberg/SimpylFold'
-" python代码缩进
-" Plug 'vim-scripts/indentpython.vim'
-" 类声明自动生成类实现的代码框架
-" Plug 'derekwyatt/vim-protodef'
-" vim-protodef的依赖vim-fswitch  fswitch
-" 帮助在配套文件（例如“.h”和“.cpp”文件）之间切换。
-" Plug 'derekwyatt/vim-fswitch'
-" 自动生成标签  依赖DfrankUtil
-" Plug 'vim-scripts/indexer.tar.gz'
-" 管理工程 依赖DfrankUtil
-" Plug 'vim-scripts/vimprj'
-" Plug 'vim-scripts/DfrankUtil'
-" 片段补全 " 用coc-snippets代替
-" Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
-" 代码回滚
-" Plug 'sjl/gundo.vim'
-" 实时显示markdown效果
-" Plug 'suan/vim-instant-markdown'
-" 快速执行
-" Plug 'thinca/vim-quickrun'
-" 快速编写html
-" Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Plug 'othree/html5.vim'
-" python自动补全 " 用coc-python代替
-" Plug 'davidhalter/jedi-vim'
-" latex 插件
-" Plug 'lervag/vimtex'
-" 翻译 " 用coc-translate代替
-" Plug 'voldikss/vim-translate-me'
-" 进行代码格式化 " 用coc-prettier 代替
-" Plug 'Chiel92/vim-autoformat'
-" 快速查找 " 用fzf代替
-" Plug 'rking/ag.vim'
-" C++ 关键字和库高亮
-" Plug 'octol/vim-cpp-enhanced-highlight'
-" 括号配对
-" Plug 'jiangmiao/auto-pairs'
-" 配色方案
-" Plug 'altercation/vim-colors-solarized' 
-" 管理日常插件
-" Plug 'vimwiki/vimwiki'
-" neovim-lsp补全插件
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Plug 'zchee/deoplete-jedi'
-" Plug 'neovim/nvim-lspconfig'
-" Plug 'hrsh7th/nvim-compe'
-
-
-
 " 安装主题
 Plug 'joshdick/onedark.vim'
 Plug 'arcticicestudio/nord-vim'
@@ -103,6 +8,31 @@ Plug 'rakr/vim-one'
 Plug 'nanotech/jellybeans.vim'
 Plug 'cocopon/pgmnt.vim'
 Plug 'preservim/vim-colors-pencil'
+Plug 'morhetz/gruvbox'
+Plug 'flazz/vim-colorschemes'
+Plug 'tomasr/molokai'
+Plug 'sainnhe/vim-color-forest-night'
+Plug 'sheerun/vim-wombat-scheme'
+Plug 'alessandroyorba/despacio'
+Plug 'alessandroyorba/alduin'
+Plug 'icymind/neosolarized'
+Plug 'zeis/vim-kolor'
+Plug 'cocopon/iceberg.vim'
+Plug 'ajh17/spacegray.vim'
+Plug 'altercation/solarized'
+Plug 'lifepillar/vim-solarized8'
+Plug 'mhartington/oceanic-next'
+Plug 'jonathanfilip/vim-lucius'
+Plug 'ayu-theme/ayu-vim'
+Plug 'kyoz/purify'
+Plug 'danilo-augusto/vim-afterglow'
+Plug 'axvr/photon.vim'
+Plug 'jsit/toast.vim'
+Plug 'dikiaap/minimalist'
+Plug 'ghifarit53/tokyonight-vim'
+Plug 'sainnhe/gruvbox-material'
+Plug 'voronianski/oceanic-next-color-scheme'
+
 
 " 图标icons插件
 Plug 'ryanoasis/vim-devicons'
@@ -110,7 +40,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 " 大纲式导航
 Plug 'majutsushi/tagbar'
-" 更强的大纲式导航，需要到github安装universal-ctags。
 Plug 'liuchengxu/vista.vim'
 " 查找文件和搜索
 Plug 'liuchengxu/vim-clap'
