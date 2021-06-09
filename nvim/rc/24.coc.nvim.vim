@@ -6,7 +6,7 @@
 " 参考： https://github.com/pappasam/coc-jedi 的FAQ / Debugging 部分
 "   'coc-jedi' 需要在coc-setting.json中设置jedi-language-server的路径
 " coc-pyright 不能进行opencv的补全
-" 要禁用coc-jedi和coc-pyright自带的diagnostic功能，要在coc-setting.json中进行设置
+" coc-snippets 需要安装vim-snippets获得可用片段
 
 let g:coc_global_extensions = [
     \ 'coc-explorer',
@@ -22,12 +22,11 @@ let g:coc_global_extensions = [
     \ 'coc-translator',
     \ 'coc-tsserver',
     \ 'coc-tslint-plugin',
-    \ 'coc-diagnostic',
     \ 'coc-vimlsp',
     \ 'coc-clangd',
     \ 'coc-cmake',
+    \ 'coc-diagnostic',
     \ ]
-
 
 " 设置文件未保存coc插件跳转时不报错
 set hidden
@@ -185,3 +184,34 @@ nnoremap <silent><nowait> ,p  :<C-u>CocListResume<CR>
 nmap <space>e :CocCommand explorer<CR>
 nmap <space>f :CocCommand explorer --preset floating<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+
+
+" adding setting for coc-snippets
+" Use <C-l> for trigger snippet expand.
+imap <C-l> <Plug>(coc-snippets-expand)
+" Use <C-j> for select text for visual placeholder of snippet.
+vmap <C-j> <Plug>(coc-snippets-select)
+" Use <C-j> for jump to next placeholder, it's default of coc.nvim
+let g:coc_snippet_next = '<c-j>'
+" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+let g:coc_snippet_prev = '<c-k>'
+" Use <C-j> for both expand and jump (make expand higher priority.)
+imap <C-j> <Plug>(coc-snippets-expand-jump)
+" Use <leader>x for convert visual selected code to snippet
+xmap <leader>x  <Plug>(coc-convert-snippet)
+
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? coc#_select_confirm() :
+      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+let g:coc_snippet_next = '<tab>'
+
+
+
