@@ -11,6 +11,9 @@
 
     // setting for coc-jedi
     "jedi.executable.command": "/Users/pwzy/anaconda3/envs/torch_1_8/bin/jedi-language-server",
-    "jedi.diagnostics.enable": false
+    "jedi.diagnostics.enable": false,
     
+    // setting for coc-pyright
+    "pyright.disableDiagnostics": true
+
 }
