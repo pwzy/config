@@ -25,6 +25,7 @@ let g:coc_global_extensions = [
     \ 'coc-vimlsp',
     \ 'coc-clangd',
     \ 'coc-cmake',
+    \ 'coc-fzf-preview'
     \ 'coc-diagnostic',
     \ 'coc-sh',
     \ ]
