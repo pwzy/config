@@ -159,6 +159,8 @@ Plug 'TaDaa/vimade'
 " vim中的Ranger和依赖bclose
 Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'
+" vim Buffer 管理
+Plug 'jlanzarotta/bufexplorer'
 
 
 
