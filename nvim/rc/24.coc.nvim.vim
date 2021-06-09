@@ -1,10 +1,12 @@
 " " ===   安装常用的coc插件
 " " === coc.nvim
 " " ===
-" 如果然出现 Jedi error: Cannot call write after a stream was destroyed #1496
-" 运行:   CocCommand python.setInterpreter  即可
-" vim(coc.nvim)报错`Linter pylint is not installed.`
-" :CocCommand python.setInterpreter 选择python版本即可
+" 注意：
+" 要使用:Format命令进行python的格式化要安装autopep8模块。
+" 参考： https://github.com/pappasam/coc-jedi 的FAQ / Debugging 部分
+"   'coc-jedi' 需要在coc-setting.json中设置jedi-language-server的路径
+" coc-pyright 不能进行opencv的补全
+" 要禁用coc-jedi和coc-pyright自带的diagnostic功能，要在coc-setting.json中进行设置
 
 let g:coc_global_extensions = [
     \ 'coc-explorer',
@@ -25,9 +27,7 @@ let g:coc_global_extensions = [
     \ 'coc-clangd',
     \ 'coc-cmake',
     \ ]
-" 参考： https://github.com/pappasam/coc-jedi 的FAQ / Debugging 部分
-"   'coc-jedi' 需要在coc-setting.json中设置jedi-language-server的路径
-" coc-pyright 不能进行opencv的补全
+
 
 " 设置文件未保存coc插件跳转时不报错
 set hidden
