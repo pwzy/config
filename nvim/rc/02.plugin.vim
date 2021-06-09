@@ -120,6 +120,8 @@ Plug 'nathanaelkane/vim-indent-guides'
 " 模糊搜索
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+" 一个高效的模糊查找器，帮助在vim和neovim中动态定位文件、缓冲区、mru、gtag等。
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 " 状态栏增强显示
 Plug 'bling/vim-airline'
 " 状态栏主题
