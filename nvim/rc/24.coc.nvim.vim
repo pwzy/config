@@ -26,6 +26,8 @@ let g:coc_global_extensions = [
     \ 'coc-clangd',
     \ 'coc-cmake',
     \ 'coc-diagnostic',
+    \ 'coc-fzf-preview',
+    \ 'coc-sh',
     \ ]
 
 " 设置文件未保存coc插件跳转时不报错
