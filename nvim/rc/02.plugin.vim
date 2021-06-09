@@ -162,6 +162,8 @@ Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'
 " vim Buffer 管理
 Plug 'jlanzarotta/bufexplorer'
+" snippets 片段插件
+Plug 'honza/vim-snippets'
 
 
 
