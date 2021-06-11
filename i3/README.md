@@ -66,5 +66,7 @@ sudo pacman -S i3lock
   assign [class="netease-cloud-music"] $ws5
   assign [class="vlc"] $ws5
   assign [class="wechat"] $ws5
-13. 
+13. 绑定锁屏快捷键
+  bindsym $mod+l i3lock
+15. 
 
