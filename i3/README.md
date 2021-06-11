@@ -71,6 +71,6 @@ sudo pacman -S i3lock
 14. 设置壁纸
   exec feh --bg-scale ~/Pictures/wallpaper/0.jpg
 15. 设置屏幕显示的大小、方向、镜像要安装xrandr
-  sudo pacman -S xrandr
+  sudo pacman -S arandr
 16. 
 
