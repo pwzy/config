@@ -51,5 +51,12 @@
   运行 rofi-theme-selector 可以进行主题的选择，默认的主题放在/usr/share/rofi/themes/目录下
   在i3中配置
   bindsym $mod+d exec --no-startup-id rofi -show drun -theme Arc-Dark
-12. 
+12. 设置指定程序启动时，默认在哪个workspace启动
+  assign [class="(?i)Chrome"] $ws2
+  assign [class="Typora"] $ws3
+  assign [class="code-oss"] $ws4
+  assign [class="netease-cloud-music"] $ws5
+  assign [class="vlc"] $ws5
+  assign [class="wechat"] $ws5
+13. 
 
