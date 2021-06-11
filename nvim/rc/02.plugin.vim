@@ -9,38 +9,18 @@ Plug 'joshdick/onedark.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'rakr/vim-one'
 Plug 'nanotech/jellybeans.vim'
-Plug 'cocopon/pgmnt.vim'
 Plug 'preservim/vim-colors-pencil'
 Plug 'morhetz/gruvbox'
 Plug 'flazz/vim-colorschemes'
 Plug 'tomasr/molokai'
-Plug 'sainnhe/vim-color-forest-night'
-Plug 'sheerun/vim-wombat-scheme'
-Plug 'alessandroyorba/despacio'
-Plug 'alessandroyorba/alduin'
-Plug 'icymind/neosolarized'
-Plug 'zeis/vim-kolor'
-Plug 'cocopon/iceberg.vim'
-Plug 'ajh17/spacegray.vim'
-Plug 'altercation/solarized'
-Plug 'lifepillar/vim-solarized8'
-Plug 'mhartington/oceanic-next'
-Plug 'jonathanfilip/vim-lucius'
-Plug 'ayu-theme/ayu-vim'
-Plug 'kyoz/purify'
-Plug 'danilo-augusto/vim-afterglow'
-Plug 'axvr/photon.vim'
-Plug 'jsit/toast.vim'
-Plug 'dikiaap/minimalist'
-Plug 'ghifarit53/tokyonight-vim'
-Plug 'sainnhe/gruvbox-material'
-Plug 'voronianski/oceanic-next-color-scheme'
+Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 
 
 " 图标icons插件
 Plug 'ryanoasis/vim-devicons'
 " vim显示缩进线
-Plug 'nathanaelkane/vim-indent-guides'
+" Plug 'nathanaelkane/vim-indent-guides'
+Plug 'Yggdroot/indentLine'
 " 状态栏增强显示
 Plug 'bling/vim-airline'
 " 状态栏主题
@@ -102,6 +82,11 @@ Plug 'kshenoy/vim-signature'
 Plug 'Lokaltog/vim-easymotion'
 " vim Buffer 管理
 Plug 'jlanzarotta/bufexplorer'
+" vim与tmux窗口之间的跳转
+" Plug 'preservim/vimux'
+" 管理buffer tab的插件
+" Plug 'kyazdani42/nvim-web-devicons'
+" Plug 'romgrk/barbar.nvim'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -132,6 +117,10 @@ Plug 'lervag/vimtex'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " snippets 片段插件
 Plug 'honza/vim-snippets'
+" 补全相邻tmux窗格中的单词
+" Plug 'prabirshrestha/async.vim'
+" Plug 'prabirshrestha/asyncomplete.vim'
+" Plug 'wellle/tmux-complete.vim'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
