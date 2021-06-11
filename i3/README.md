@@ -78,5 +78,6 @@ sudo pacman -S i3lock
   assign [class="第二个选项"] $workspace10
   其中$workspace10表示特定桌面
   assign [class="kitty"] 10  设置kitty在第10个桌面打开
+17. 安装字体可以新建字体文件夹，~/.fonts/ 然后将自己的字体ttf文件拷贝进去即可
 18. 
 
