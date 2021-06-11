@@ -88,7 +88,7 @@ sudo pacman -S i3lock
   sudo pacman -S lxappearance
   运行lxappearance，随便调整字体大小后在用户目录出现~/.gtkrc-2.0 和 ~/.config/gtk-3.0/settings.ini
   更改这两个文件里的字体为 gtk-font-name="System San Francisco Display 13"
-  # 这是因为一些软件使用gtk2另一些使用gtk3
+  这是因为一些软件使用gtk2另一些使用gtk3
   重启 lxappearance 工具，看到字体已经改变
   
   进行字体效果渲染，使用Infinality。
