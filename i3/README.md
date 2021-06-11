@@ -68,5 +68,8 @@ sudo pacman -S i3lock
   assign [class="wechat"] $ws5
 13. 绑定锁屏快捷键
   bindsym $mod+shift+x exec i3lock
+14. 设置壁纸
+  exec feh --bg-scale ~/Pictures/wallpaper/0.jpg
 15. 
+16. 
 
