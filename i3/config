@@ -187,6 +187,8 @@ bar {
 
 # 添加fcitx5的开机自启动
 exec_always fcitx5
+# 设置壁纸
+exec feh --bg-scale ~/Pictures/wallpaper/0.jpg
 
 # 安装i3-gaps
 gaps inner 10
