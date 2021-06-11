@@ -19,3 +19,14 @@ let g:airline_detect_paste=1
 let g:airline_detect_crypt=1
 let g:airline_highlighting_cache = 1
 let g:airline#extensions#tabline#show_tab_type = 0
+
+let g:airline#extensions#tabline#buffer_idx_mode = 1
+nmap <A-1> <Plug>AirlineSelectTab1
+nmap <A-2> <Plug>AirlineSelectTab2
+nmap <A-3> <Plug>AirlineSelectTab3
+nmap <A-4> <Plug>AirlineSelectTab4
+nmap <A-5> <Plug>AirlineSelectTab5
+nmap <A-6> <Plug>AirlineSelectTab6
+nmap <A-7> <Plug>AirlineSelectTab7
+nmap <A-8> <Plug>AirlineSelectTab8
+nmap <A-9> <Plug>AirlineSelectTab9
