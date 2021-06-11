@@ -192,4 +192,7 @@ exec_always fcitx5
 gaps inner 10
 gaps outer 0
 
+# 锁屏
+bindsym $mod+l i3lock
+
 
