@@ -92,7 +92,7 @@ inoremap jk <Esc>
 
 " 设置前缀
 let mapleader="\<Space>"
-let maplocalleader=","
+let maplocalleader="\\"
 
 " 设置不要高亮
 nnoremap <leader>n :nohl<CR>
