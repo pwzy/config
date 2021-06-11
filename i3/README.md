@@ -1,5 +1,8 @@
 # 安装i3
 sudo pacman -S i3
+# 安装锁屏软件
+sudo pacman -S i3lock 
+在终端运行i3lock即可锁屏
 # 生成设置文件
 运行 i3-config-wizard
 
