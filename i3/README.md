@@ -67,6 +67,6 @@ sudo pacman -S i3lock
   assign [class="vlc"] $ws5
   assign [class="wechat"] $ws5
 13. 绑定锁屏快捷键
-  bindsym $mod+l i3lock
+  bindsym $mod+shift+x i3lock
 15. 
 
