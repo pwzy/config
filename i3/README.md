@@ -72,5 +72,11 @@ sudo pacman -S i3lock
   exec feh --bg-scale ~/Pictures/wallpaper/0.jpg
 15. 设置屏幕显示的大小、方向、镜像要安装xrandr
   sudo pacman -S arandr
-16. 
+16. 设置特定桌面开启特定程序
+  在特定桌面开启特定程序并打开终端运行  xprop  ，显示信息 WM_CLASS(STRING)='第一个字符串','第二个字符串'
+  选择第二个字符串后在i3的配置文件中设置
+  assign [class="第二个选项"] $workspace10
+  其中$workspace10表示特定桌面
+  assign [class="kitty"] 10  设置kitty在第10个桌面打开
+18. 
 
