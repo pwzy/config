@@ -48,7 +48,8 @@
   sudo pacman -S xorg-xbacklight 
 11. 配置rofi
   sudo pacman -S rofi
+  运行rofi-theme-selectork可以进行主题的选择，默认的主题放在/usr/share/rofi/themes/目录下
   在i3中配置
-  bindsym $mod+d exec --no-startup-id rofi -show drun -theme fancy
+  bindsym $mod+d exec --no-startup-id rofi -show drun -theme Arc-Dark
 12. 
 
