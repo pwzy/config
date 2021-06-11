@@ -84,5 +84,11 @@ sudo pacman -S i3lock
 18. 安装github中的YosemiteSanFranciscoFont字体
   设置i3的字体
   font pango:System San Francisco Display 13
-21. 
+19. 安装GTK主题更换工具 lxappearance 
+  sudo pacman -S lxappearance
+  运行lxappearance，随便调整字体大小后在用户目录出现~/.gtkrc-2.0 和 ~/.config/gtk-3.0/settings.ini
+  更改这两个文件里的字体为 gtk-font-name="System San Francisco Display 13"
+  # 这是因为一些软件使用gtk2另一些使用gtk3
+  重启 lxappearance 工具，看到字体已经改变
+  
 
