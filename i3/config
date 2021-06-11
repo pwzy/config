@@ -184,3 +184,9 @@ bar {
 
 # 添加fcitx5的开机自启动
 exec_always fcitx5
+
+# 安装i3-gaps
+gaps inner 10
+gaps outer 0
+
+
