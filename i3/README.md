@@ -26,7 +26,7 @@
   bindsym $mod+Return exec kitty
 3. 设置各工作区名称
   set $ws1 "1:Terminal"
-  set $ws2 "2:Emacs"
+  set $ws2 "2:Qutebrowser"
   set $ws3 "3:FireFox"
   ...
 4. 安装文件搜索器
@@ -36,7 +36,7 @@
 6. 设置窗口半透明+毛玻璃效果
   卸载原有的compton sudo pacman -R compton
   若遇到依赖问题无法卸载，则 sudo pacman -Rc compton
-  安装compton sudo pacman -R compton
+  安装compton: sudo pacman -S compton
 7. 使用 deepin-file-manager 来代替默认的 pcmanfm
   sudo pacman -S deepin-file-manager
 9. 窗口之间的间距通过i3-gaps来设置
