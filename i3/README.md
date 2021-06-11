@@ -91,4 +91,8 @@ sudo pacman -S i3lock
   # 这是因为一些软件使用gtk2另一些使用gtk3
   重启 lxappearance 工具，看到字体已经改变
   
+  进行字体效果渲染，使用Infinality。
+  https://wiki.archlinux.org/index.php?title=Infinality_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)&redirect=no
+  
+  
 
