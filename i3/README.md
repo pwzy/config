@@ -81,5 +81,8 @@ sudo pacman -S i3lock
 17. 安装字体可以新建字体文件夹，~/.fonts/ 然后将自己的字体ttf文件拷贝进去即可
   安装github仓库中的Fontd-Awesome字体
   打开 Font Awesome cheetsheet查找对应图标贴进i3窗口名称中即可
-19. 
+18. 安装github中的YosemiteSanFranciscoFont字体
+  设置i3的字体
+  font pango:System San Francisco Display 13
+21. 
 
