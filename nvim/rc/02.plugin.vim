@@ -1,6 +1,9 @@
 call plug#begin('~/.local/share/nvim/plugged')
 "" 插件在此之后  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ui 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 安装主题
 Plug 'joshdick/onedark.vim'
 Plug 'arcticicestudio/nord-vim'
@@ -36,6 +39,27 @@ Plug 'voronianski/oceanic-next-color-scheme'
 
 " 图标icons插件
 Plug 'ryanoasis/vim-devicons'
+" vim显示缩进线
+Plug 'nathanaelkane/vim-indent-guides'
+" 状态栏增强显示
+Plug 'bling/vim-airline'
+" 状态栏主题
+Plug 'vim-airline/vim-airline-themes'
+" Vim启动界面
+Plug 'mhinz/vim-startify'
+" 启动主题
+" Plug 'glepnir/dashboard-nvim'
+" 高亮单词
+Plug 'lfv89/vim-interestingwords'
+" 配色表
+Plug 'guns/xterm-color-table.vim'
+" 淡出非活动缓冲区，并保留你的语法突出显示！
+" Plug 'TaDaa/vimade'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" search
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 类似于nerdtree的文件管理器
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 " 大纲式导航
@@ -45,8 +69,6 @@ Plug 'liuchengxu/vista.vim'
 Plug 'liuchengxu/vim-clap'
 " 增强 Vim 的书签(标记)跳转功能
 Plug 'kshenoy/vim-signature'
-" vim显示缩进线
-Plug 'nathanaelkane/vim-indent-guides'
 " 模糊搜索
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -54,40 +76,28 @@ Plug 'junegunn/fzf.vim'
 Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
 " 一个高效的模糊查找器，帮助在vim和neovim中动态定位文件、缓冲区、mru、gtag等。
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
-" 状态栏增强显示
-Plug 'bling/vim-airline'
-" 状态栏主题
-Plug 'vim-airline/vim-airline-themes'
 " 快速移动
 Plug 'Lokaltog/vim-easymotion'
 " 多光标操作
 Plug 'terryma/vim-multiple-cursors'
-" Vim启动界面
-Plug 'mhinz/vim-startify'
 " 快速选择相领的对象
 Plug 'vim-scripts/wildfire.vim'
 " 更改成对符号
 Plug 'tpope/vim-surround'
 " 批量注释与反注释
 Plug 'scrooloose/nerdcommenter'
-" 高亮单词
-Plug 'lfv89/vim-interestingwords'
 " 安装中文帮助文档
 Plug 'yianwillis/vimcdoc'
-" latex 插件
-Plug 'lervag/vimtex'
-" 配色表
-Plug 'guns/xterm-color-table.vim'
 " 按键提示插件
 Plug 'liuchengxu/vim-which-key'
+" latex 插件
+Plug 'lervag/vimtex'
 " 强大插件
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " vim 调试插件
 Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-python'}
 " 浮动终端
 Plug 'voldikss/vim-floaterm'
-" 淡出非活动缓冲区，并保留你的语法突出显示！
-Plug 'TaDaa/vimade'
 " vim中的Ranger和依赖bclose
 Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'
