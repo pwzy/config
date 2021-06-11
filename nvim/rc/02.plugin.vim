@@ -2,7 +2,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 "" 插件在此之后  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ui 
+" UI
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 安装主题
 Plug 'joshdick/onedark.vim'
@@ -58,17 +58,16 @@ Plug 'guns/xterm-color-table.vim'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" search
+" SEARCH
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 类似于nerdtree的文件管理器
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
-" 大纲式导航
-Plug 'majutsushi/tagbar'
-Plug 'liuchengxu/vista.vim'
+" Find, Filter, Preview, Pick. All lua, all the time.
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 " 查找文件和搜索
 Plug 'liuchengxu/vim-clap'
-" 增强 Vim 的书签(标记)跳转功能
-Plug 'kshenoy/vim-signature'
 " 模糊搜索
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -76,8 +75,11 @@ Plug 'junegunn/fzf.vim'
 Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
 " 一个高效的模糊查找器，帮助在vim和neovim中动态定位文件、缓冲区、mru、gtag等。
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
-" 快速移动
-Plug 'Lokaltog/vim-easymotion'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SELECT
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 多光标操作
 Plug 'terryma/vim-multiple-cursors'
 " 快速选择相领的对象
@@ -86,25 +88,57 @@ Plug 'vim-scripts/wildfire.vim'
 Plug 'tpope/vim-surround'
 " 批量注释与反注释
 Plug 'scrooloose/nerdcommenter'
-" 安装中文帮助文档
-Plug 'yianwillis/vimcdoc'
-" 按键提示插件
-Plug 'liuchengxu/vim-which-key'
-" latex 插件
-Plug 'lervag/vimtex'
-" 强大插件
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" vim 调试插件
-Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-python'}
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NAVIGATION
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 大纲式导航
+Plug 'majutsushi/tagbar'
+Plug 'liuchengxu/vista.vim'
+" 增强 Vim 的书签(标记)跳转功能
+Plug 'kshenoy/vim-signature'
+" 快速移动
+Plug 'Lokaltog/vim-easymotion'
+" vim Buffer 管理
+Plug 'jlanzarotta/bufexplorer'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" TERMINAL
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 浮动终端
 Plug 'voldikss/vim-floaterm'
 " vim中的Ranger和依赖bclose
 Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'
-" vim Buffer 管理
-Plug 'jlanzarotta/bufexplorer'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" HELP
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 安装中文帮助文档
+Plug 'yianwillis/vimcdoc'
+" 按键提示插件
+Plug 'liuchengxu/vim-which-key'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" COMPLETE
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" latex 插件
+Plug 'lervag/vimtex'
+" 强大插件
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " snippets 片段插件
 Plug 'honza/vim-snippets'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" DEBUG
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim 调试插件
+Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-python'}
 
 
 
