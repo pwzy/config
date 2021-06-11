@@ -35,6 +35,8 @@ Plug 'lfv89/vim-interestingwords'
 Plug 'guns/xterm-color-table.vim'
 " 淡出非活动缓冲区，并保留你的语法突出显示！
 " Plug 'TaDaa/vimade'
+" 彩色括号
+Plug 'luochen1990/rainbow' 
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -87,6 +89,14 @@ Plug 'jlanzarotta/bufexplorer'
 " 管理buffer tab的插件
 " Plug 'kyazdani42/nvim-web-devicons'
 " Plug 'romgrk/barbar.nvim'
+" % 的加强插件
+" Plug 'andymass/vim-matchup'
+" 增强f/F/t/T的插件
+" Plug 'rhysd/clever-f.vim'
+" 利用f快速移动
+Plug 'unblevable/quick-scope' 
+
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -97,6 +107,8 @@ Plug 'voldikss/vim-floaterm'
 " vim中的Ranger和依赖bclose
 Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'
+" n^3 插件，类似于ranger
+Plug 'mcchrish/nnn.vim'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
