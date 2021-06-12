@@ -95,7 +95,8 @@ sudo pacman -S i3lock
   https://wiki.archlinux.org/index.php?title=Infinality_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)&redirect=no
 20. 参考配置: github: alexbooker/dotfiles
 21. 设置打开新窗口的样式去掉window title
-  new_window pixel 0
+  default_border none 或者  default_border pixel 0
+22. 
   
  
  
