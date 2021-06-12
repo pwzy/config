@@ -188,11 +188,6 @@ bindsym $mod+r mode "resize"
 #        status_command i3status
 # }
 
-# 添加fcitx5的开机自启动
-exec_always fcitx5
-# 设置壁纸
-exec feh --bg-scale ~/Pictures/wallpaper/0.jpg
-
 # 安装i3-gaps
 gaps inner 10
 gaps outer 0
@@ -200,4 +195,14 @@ gaps outer 0
 # 锁屏
 bindsym $mod+shift+x exec i3lock
 
+# 设置新开窗口后window title不显示
+# default_border pixel 0
+default_border none
+
+# 添加fcitx5的开机自启动
+exec_always fcitx5
+# 设置壁纸
+exec feh --bg-scale ~/Pictures/wallpaper/0.jpg
+
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
