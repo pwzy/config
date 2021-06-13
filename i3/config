@@ -206,3 +206,21 @@ exec feh --bg-scale ~/Pictures/wallpaper/0.jpg
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
+# # 1. 更换终端为kitty
+# # 2. 更改窗口名：eg: set $ws1 "1:Terminal"
+# # 3. 设置程序启动窗口：assign [class="kitty"] $ws1
+# # 4. 更改程序启动器：bindsym $mod+d exec --no-startup-id rofi -show drun -theme Arc-Dark
+# # 5. 安装i3-gaps,设置窗口间距：
+# gaps inner 10
+# gaps outer 0
+# # 6. 绑定锁屏快捷键
+# bindsym $mod+shift+x exec i3lock
+# # 7. 设置新开窗口后window title不显示
+# default_border none
+# # 8. 添加fcitx5的开机自启动
+# exec_always fcitx5
+# # 9. 设置壁纸
+# exec feh --bg-scale ~/Pictures/wallpaper/0.jpg
+# # 10.启动polybar，注释掉i3中的bar的i3status的设置
+# exec_always --no-startup-id ~/.config/polybar/launch.sh
+
