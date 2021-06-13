@@ -202,3 +202,8 @@ exec_always --no-startup-id fcitx5
 exec --no-startup-id ~/.config/i3/feh.sh
 # 10.启动polybar，注释掉i3中的bar的i3status的设置
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+# 11.设置调节屏幕亮度
+# 方案一  安装xorg-xbacklight, acpilight,
+bindsym XF86MonBrightnessUp exec --no-startup-id "xbacklight -inc 5; notify-send 'brightness up'"
+bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 5; notify-send 'brightness down'"
+
