@@ -7,3 +7,8 @@
     chmod +x $HOME/.config/polybar/launch.sh
 6. 在i3配置文件中添加自启动
     exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+############################################################################
+其他配置
+############################################################################
+1. 声音模块：使用pulseaudio， 需要在默认的配置中禁用alsa模块（注释掉alsa模块，否使用pulseaudio可能会有问题）
+
