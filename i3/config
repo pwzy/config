@@ -190,8 +190,8 @@ bindsym $mod+r mode "resize"
 # 3. 设置程序启动窗口：assign [class="kitty"] $ws1
 # 4. 更改程序启动器：bindsym $mod+d exec --no-startup-id rofi -show drun -theme Arc-Dark
 # 5. 安装i3-gaps,设置窗口间距：
-gaps inner 10
-gaps outer 0
+gaps inner 15
+gaps outer 5
 # 6. 绑定锁屏快捷键
 bindsym $mod+shift+x exec i3lock
 # 7. 设置新开窗口后window title不显示
@@ -216,4 +216,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 5; notify-se
 bindsym XF86AudioRaiseVolume exec amixer set Master playback 5000+
 bindsym XF86AudioLowerVolume exec amixer set Master playback 5000-
 bindsym XF86AudioMute exec amixer set Master toggle
-# 13.
+# 13. 安装picom,这是compton的升级版本。如果使用的是ubuntu，它的源里面只有compton，所以使用compton
+# sudo pacman -S picom
+# 在i3的配置文件里配置自启动
+exec_always --no-startup-id picom
