@@ -1,0 +1,31 @@
+1. 下载字体文件，拷贝到 /usr/share/fonts 目录中
+2. 进入主目录，执行以下命令
+  sudo mkfontscale 
+  sudo mkfontdir
+  sudo fc-cache -fv
+3. 输入 fc-list 即可查看安装好的字体
+
+4. 常用字体：
+  4.1 System San Francisco Display 
+    https://github.com/supermarin/YosemiteSanFranciscoFont.git
+    安装：
+    cd ~/Downloads
+    git clone https://github.com/supermarin/YosemiteSanFranciscoFont.git
+    sudo cp -r YosemiteSanFranciscoFont /usr/share/fonts/
+    cd /usr/share/fonts/YosemiteSanFranciscoFont && sudo mkfontscale && sudo mkfontdir && sudo fc-cache -fv
+    cd ~/Downloads
+    查找字体：
+      fc-list | grep "System San Francisco Display"
+  4.2 Nerd Font
+    https://github.com/ryanoasis/nerd-fonts.git
+    安装：
+    cd ~/Downloads
+    wget -O FiraMono.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraMono.zip
+    unzip FiraMono.zip -d FiraMono
+    sudo cp -r FiraMono/ /usr/share/fonts/
+    cd /usr/share/fonts/FiraMono && sudo mkfontscale && sudo mkfontdir && sudo fc-cache -fv
+    cd ~/Downloads
+    查找字体： 
+      fc-list | grep "Fira Mono"
+  4.3  
+    
