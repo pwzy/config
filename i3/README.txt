@@ -97,7 +97,7 @@ sudo pacman -S i3lock
 21. 设置打开新窗口的样式去掉window title
   default_border none 或者  default_border pixel 0
 22. 安装clipit，便于复制与粘贴
-  
+  sudo pacman -S clipit
  
  
  
