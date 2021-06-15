@@ -193,7 +193,8 @@ bindsym $mod+r mode "resize"
 gaps inner 15
 gaps outer 5
 # 6. 绑定锁屏快捷键
-bindsym $mod+shift+x exec i3lock
+# bindsym $mod+shift+x exec i3lock
+bindsym $mod+shift+x exec i3lock-fancy
 # 7. 设置新开窗口后window title不显示
 default_border none
 # 8. 添加fcitx5的开机自启动
