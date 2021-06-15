@@ -16,7 +16,7 @@
     cd ~/Downloads
     查找字体：
       fc-list | grep "System San Francisco Display"
-  4.2 Nerd Font
+  4.2 Nerd Font  (Fira Mono)
     https://github.com/ryanoasis/nerd-fonts.git
     安装：
     cd ~/Downloads
@@ -27,5 +27,29 @@
     cd ~/Downloads
     查找字体： 
       fc-list | grep "Fira Mono"
-  4.3  
+  4.3  google MaterialIcons
+    https://github.com/google/material-design-icons.git
+    安装：
+    cd ~/Downloads
+    git clone https://github.com/google/material-design-icons.git
+    cd material-design-icons && ls | grep -v font | xargs rm -rf 
+    cp font/* .    
+    cd ~/Downloads
+    sudo cp -r material-design-icons/ /usr/share/fonts/
+    cd /usr/share/fonts/material-design-icons && sudo mkfontscale && sudo mkfontdir && sudo fc-cache -fv
+    cd ~/Downloads
+    查找字体： 
+      fc-list | grep MaterialIcons
+  4.4 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
