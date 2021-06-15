@@ -12,5 +12,6 @@
 
 
 nnoremap <A-x> <cmd>Telescope<cr>
+nnoremap <C-x> <cmd>Telescope commands<cr>
 
 
