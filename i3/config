@@ -221,3 +221,5 @@ bindsym XF86AudioMute exec amixer set Master toggle
 # sudo pacman -S picom
 # 在i3的配置文件里配置自启动
 exec_always --no-startup-id picom
+# 14. 设置键盘重复按键延时
+exec_always --no-startup-id xset r rate 250 60
