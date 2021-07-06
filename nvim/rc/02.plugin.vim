@@ -117,7 +117,7 @@ Plug 'mcchrish/nnn.vim'
 " 安装中文帮助文档
 Plug 'yianwillis/vimcdoc'
 " 按键提示插件
-Plug 'liuchengxu/vim-which-key'
+" Plug 'liuchengxu/vim-which-key'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -141,6 +141,15 @@ Plug 'honza/vim-snippets'
 " vim 调试插件
 Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-python'}
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NOOTES
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 笔记软件
+Plug 'vimwiki/vimwiki'
+" 表格插件
+Plug 'dhruvasagar/vim-table-mode'
+" Markdown预览
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 
 
