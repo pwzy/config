@@ -10,9 +10,12 @@ set cursorline
 " 设置默认移动屏幕行
 nnoremap j gj
 nnoremap k gk
+nnoremap <DOWN> gj
+nnoremap <UP> gk
 nnoremap 0 g0
 nnoremap $ g$
 nnoremap ^ g^
+
 
 " 定制终端色调
 " highlight Pmenu ctermbg=white gui=bold
