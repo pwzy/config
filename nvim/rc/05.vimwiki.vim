@@ -10,5 +10,5 @@ nnoremap glI :VimwikiChangeSymbolTo I)<CR>
 nnoremap gLI :VimwikiChangeSymbolInListTo I)<CR>
 
 
-let g:vimwiki_list = [{'path': '~/vimwiki/person', 'syntax': 'markdown', 'ext': '.md'},
-                    \ {'path': '~/vimwiki/work', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': '~/vimwiki/work', 'syntax': 'markdown', 'ext': '.md'},
+                    \ {'path': '~/vimwiki/person', 'syntax': 'markdown', 'ext': '.md'}]
