@@ -5,7 +5,7 @@ filetype plugin indent on
 
 " 高亮显示当前行/列
 set cursorline
-set cursorcolumn
+" set cursorcolumn
 
 " 定制终端色调
 " highlight Pmenu ctermbg=white gui=bold
