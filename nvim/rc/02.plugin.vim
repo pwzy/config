@@ -96,7 +96,9 @@ Plug 'jlanzarotta/bufexplorer'
 " 增强f/F/t/T的插件
 " Plug 'rhysd/clever-f.vim'
 " 利用f快速移动
-Plug 'unblevable/quick-scope' 
+Plug 'unblevable/quick-scope'
+" 快速撤销
+Plug 'mbbill/undotree'
 
 
 
