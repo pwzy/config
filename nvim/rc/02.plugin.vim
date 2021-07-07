@@ -68,6 +68,8 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-scripts/wildfire.vim'
 " 更改成对符号
 Plug 'tpope/vim-surround'
+" 使surround插件操作能重复的插件
+Plug 'tpope/vim-repeat'
 " 批量注释与反注释
 Plug 'scrooloose/nerdcommenter'
 
