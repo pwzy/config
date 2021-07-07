@@ -144,12 +144,18 @@ Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-python'}
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NOOTES
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Markdown 增强插件
+Plug 'godlygeek/tabular' 
+Plug 'plasticboy/vim-markdown'
+" 在当前光标生成Markdown目录的插件
+" Plug 'mzlogin/vim-markdown-toc'
 " 笔记软件
 Plug 'vimwiki/vimwiki'
 " 表格插件
 Plug 'dhruvasagar/vim-table-mode'
 " Markdown预览
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
 
 
 
