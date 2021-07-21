@@ -225,4 +225,6 @@ exec_always --no-startup-id picom
 exec_always --no-startup-id xset r rate 250 60
 # 15. 设置动态代理
 # exec --no-startup-id ssh -D 9990 -CTqnN ubuntu@jixuecao.top -f 
-exec --no-startup-id autossh -M 9991 -fCTqnN -L 9990:localhost:7890 ubuntu@jixuecao.top -p 22
+exec_always --no-startup-id autossh -M 9991 -fCTqnN -L 9990:localhost:7890 ubuntu@jixuecao.top -p 22
+# 16. 同步时间 （可能造成i3卡顿）
+exec ntpdate pool.ntp.org 
