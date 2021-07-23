@@ -1,7 +1,7 @@
 ######################################################################################
 # fzf setting
 ######################################################################################
-export fzf_common="-E={.git,.idea,.sass-cache,node_modules,build,.local,Library,.wine,.vim,.cache,anaconda3}"
+export fzf_common="-E={.git,.idea,.sass-cache,node_modules,build,.local,Library,.wine,.vim,.cache,anaconda3,.deepinwine}"
 # export FZF_DEFAULT_COMMAND="fd --hidden --follow -E={.git,.idea,.sass-cache,node_modules,build} \
 #     -E={.local,Library,.wine,.vim,.cache,anaconda3} \
 #     . \
