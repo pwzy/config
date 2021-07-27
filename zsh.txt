@@ -77,7 +77,7 @@ brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump   \
             ag ripgrep node tldr lazygit lazydocker cloc hub exa     \
             glances tree ShellCheck cheat GoAccess navi nnn z zoxide \
             w3m chafa ffmpeg tmux docker git texlab ctags annie bear \
-            youtube-dl cmake tig socat delta sxiv percol
+            youtube-dl cmake tig socat delta sxiv percol sshfs
              
             
 npm install --global git-open 
@@ -86,8 +86,11 @@ sudo apt install aptitude powerline ffprobe
 
 ######################################################################
 注意：
-配置fzf要根据官网进行安装，需要绑定fzf按键 如下安装
-brew install fzf
-# To install useful key bindings and fuzzy completion:
-$(brew --prefix)/opt/fzf/install
+1. 配置fzf要根据官网进行安装，需要绑定fzf按键 如下安装
+    brew install fzf
+    # To install useful key bindings and fuzzy completion:
+    $(brew --prefix)/opt/fzf/install
+
+2. mac 中的sshfs安装会失败，须下载官网： https://osxfuse.github.io/  给出的俩个软件安装后重启才能成功
+
 ####################################################################################################################################
