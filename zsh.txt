@@ -92,5 +92,6 @@ sudo apt install aptitude powerline ffprobe
     $(brew --prefix)/opt/fzf/install
 
 2. mac 中的sshfs安装会失败，须下载官网： https://osxfuse.github.io/  给出的俩个软件安装后重启才能成功
+3. 调节title bar  https://github.com/linuxdeepin/developer-center/issues/1210
 
 ####################################################################################################################################
