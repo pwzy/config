@@ -24,3 +24,5 @@ unset __conda_setup
 # alias clash="bash /home/jing/.local/share/clash/clash.sh"
 # export clashdir="/home/jing/.local/share/clash"
 
+xset r rate 250 50
+
