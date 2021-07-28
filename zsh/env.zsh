@@ -4,7 +4,7 @@ export PATH="/Users/pwzy/.local/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 # OTHERS ###########################################################
-export TERM=xterm-kitty
+export TERM=xterm-256color
 
 export EDITOR="nvim"
 export VISUAL="nvim"
