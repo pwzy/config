@@ -1,0 +1,4 @@
+1. sudo pacman -S emacs 提示 libicui18n.69 找不到  
+  百度搜索 libicui18n.so.69 转到  https://www.linuxfromscratch.org/blfs/view/svn/general/icu.html 
+  编译安装
+2. 
