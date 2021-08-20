@@ -113,7 +113,8 @@ Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'
 " n^3 插件，类似于ranger
 Plug 'mcchrish/nnn.vim'
-
+" ranger浮动交互
+“ Plug 'kevinhwang91/rnvimr'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " HELP
