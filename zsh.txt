@@ -78,7 +78,7 @@ brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump   \
             glances tree ShellCheck cheat GoAccess navi nnn z zoxide \
             w3m chafa ffmpeg tmux docker git texlab ctags annie bear \
             youtube-dl cmake tig socat sxiv percol sshfs git-delta   \
-            dust duf broot ripgrep
+            dust duf broot ripgrep choose-rust
              
             
 npm install --global git-open 
