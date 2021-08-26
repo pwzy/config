@@ -81,7 +81,7 @@ brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump   \
             dust duf broot ripgrep choose-rust sd zoxide hyperfine   \
             clementtsang/bottom/bottom gping procs rs/tap/curlie     \
             sampler hexyl googler terminal-notifier jrnl onefetch    \
-            ddgr xplr
+            ddgr xplr fanyi 
             
              
             
