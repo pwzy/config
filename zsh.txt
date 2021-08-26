@@ -99,6 +99,7 @@ sudo apt install aptitude powerline ffprobe
 3. 调节title bar  https://github.com/linuxdeepin/developer-center/issues/1210
 4. McFly - fly through your shell history
 5. jq is a lightweight and flexible command-line JSON processor.
+6. dat : peer-to-peer sharing & live syncronization of files via command line
 
 
 ####################################################################################################################################
