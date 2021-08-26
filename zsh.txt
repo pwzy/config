@@ -80,7 +80,7 @@ brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump   \
             youtube-dl cmake tig socat sxiv percol sshfs git-delta   \
             dust duf broot ripgrep choose-rust sd zoxide hyperfine   \
             clementtsang/bottom/bottom gping procs rs/tap/curlie     \
-            sampler hexyl
+            sampler hexyl googler terminal-notifier jrnl 
             
              
             
@@ -101,6 +101,6 @@ sudo apt install aptitude powerline ffprobe
 5. jq is a lightweight and flexible command-line JSON processor.
 6. dat : peer-to-peer sharing & live syncronization of files via command line
 7. gitsome : A supercharged Git/GitHub command line interface (CLI).
-
+8. pet : Simple command-line snippet manager, written in Go.
 
 ####################################################################################################################################
