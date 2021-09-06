@@ -16,5 +16,10 @@ alias ft="fzf-tmux"
 alias speed="wget -c https://developer.download.nvidia.com/compute/cuda/11.1.1/local_installers/cuda_11.1.1_455.32.00_linux.run"
 alias makefile="echo -e 'a.out: *.cpp \n\\tclang++ -g \`pkg-config --libs --cflags opencv4\` *.cpp -o a.out' > makefile"
 
+# setting for proxy
+alias vpn="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890"
+alias vpn="export https_proxy=http://10.16.4.72:7890 http_proxy=http://10.16.4.72:7890 all_proxy=socks5://10.16.4.72:7890"
+alias devpn="export https_proxy='' http_proxy='' all_proxy=''"
+
 
 
