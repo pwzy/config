@@ -160,6 +160,9 @@ Plug 'vimwiki/vimwiki'
 Plug 'dhruvasagar/vim-table-mode'
 " Markdown预览
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+" gist github 插件
+Plug 'mattn/vim-gist', {'depends': 'mattn/webapi-vim'}
+Plug 'mattn/webapi-vim'
 
 
 
