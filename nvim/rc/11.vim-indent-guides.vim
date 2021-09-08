@@ -1,5 +1,5 @@
 " 随 vim 自启动
-let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_enable_on_vim_startup=0
 " 从第二层开始可视化显示缩进
 let g:indent_guides_start_level=2
 " 色块宽度
