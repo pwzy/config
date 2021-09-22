@@ -83,7 +83,7 @@ brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump   \
             sampler hexyl googler terminal-notifier jrnl onefetch    \
             ddgr xplr fanyi translate-shell
             
-             
+pip install bpython
             
 npm install --global git-open 
 github下载： browsh
