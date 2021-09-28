@@ -20,6 +20,9 @@ alias makefile="echo -e 'a.out: *.cpp \n\\tclang++ -g \`pkg-config --libs --cfla
 alias vpn="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890"
 alias vpn="export https_proxy=http://10.16.4.72:7890 http_proxy=http://10.16.4.72:7890 all_proxy=socks5://10.16.4.72:7890"
 alias devpn="export https_proxy='' http_proxy='' all_proxy=''"
+alias vpninfo='echo -e https_proxy:"\t" $https_proxy "\n"http_proxy:"\t" $http_proxy  "\n"all_proxy:"\t" $all_proxy'
+alias update="source ~/.zshrc"
+
 
 
 
