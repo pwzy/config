@@ -5,53 +5,53 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 233v2.com_43.131.72.28, server: 43.131.72.28, port: 32409, type: vmess, uuid: 1a076505-1fa0-4297-8609-1d77e738b332, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: pwzy, server: 43.131.72.29, port: 32409, type: vmess, uuid: 1a076505-1fa0-4297-8609-1d77e738b332, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 233v2.com_43.131.72.28
+      - pwzy
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 233v2.com_43.131.72.28
+      - pwzy
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 233v2.com_43.131.72.28
+      - pwzy
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 233v2.com_43.131.72.28
+      - pwzy
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 233v2.com_43.131.72.28
+      - pwzy
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 233v2.com_43.131.72.28
+      - pwzy
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 233v2.com_43.131.72.28
+      - pwzy
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -64,7 +64,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 233v2.com_43.131.72.28
+      - pwzy
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
