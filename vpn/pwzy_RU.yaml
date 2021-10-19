@@ -6,6 +6,7 @@ log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
   - {name: pwzy, server: 43.131.72.29, port: 32409, type: vmess, uuid: 1a076505-1fa0-4297-8609-1d77e738b332, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: pwzy_ali, server: 47.241.235.125, port: 50936, type: vmess, uuid: 524b48a7-8c7e-4f53-a36f-4ad231ea8181, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -13,6 +14,7 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - pwzy
+      - pwzy_ali
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
