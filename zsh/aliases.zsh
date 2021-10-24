@@ -9,6 +9,10 @@ alias torch_1_8="conda activate torch_1_8"
 
 alias vim="~/.local/bin/nvim.appimage " 
 
+alias ezsh="nvim ~/.zshrc"
+alias ealias="nvim ~/.config/zsh/aliases.zsh"
+alias eenv="nvim ~/.config/zsh/env.zsh"
+
 alias ta="tmux attach-session -t "
 alias tn="tmux new-session -t "
 alias tk="tmux kill-session -t "
