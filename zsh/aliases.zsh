@@ -16,6 +16,9 @@ alias cdzsh="cd ~/.config/zsh"
 alias cdvim="cd ~/.config/nvim"
 alias cdranger="cd ~/.config/ranger"
 alias cdpic="cd ~/Pictures"
+alias sshlab="ssh -X jing@192.168.3.4"
+alias sshlab1="ssh -X jing@10.16.4.72"
+
 
 alias ta="tmux attach-session -t "
 alias tn="tmux new-session -t "
