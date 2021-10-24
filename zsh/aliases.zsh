@@ -12,6 +12,7 @@ alias vim="~/.local/bin/nvim.appimage "
 alias ezsh="nvim ~/.zshrc"
 alias ealias="nvim ~/.config/zsh/aliases.zsh"
 alias eenv="nvim ~/.config/zsh/env.zsh"
+alias eclash="nvim ~/.local/share/clash/config.yaml"
 alias cdzsh="cd ~/.config/zsh"
 alias cdvim="cd ~/.config/nvim"
 alias cdranger="cd ~/.config/ranger"
@@ -21,6 +22,7 @@ alias sshfsmount="if [ ! -d ~/Downloads/jing ]; then mkdir ~/Downloads/jing; fi 
 alias sshfsumount="umount ~/Downloads/jing"
 alias sshlab="ssh -X jing@192.168.3.4"
 alias sshlab1="ssh -X jing@10.16.4.72"
+
 
 
 alias ta="tmux attach-session -t "
