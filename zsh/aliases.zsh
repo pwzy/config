@@ -23,8 +23,6 @@ alias sshfsumount="umount ~/Downloads/jing"
 alias sshlab="ssh -X jing@192.168.3.4"
 alias sshlab1="ssh -X jing@10.16.4.72"
 
-
-
 alias ta="tmux attach-session -t "
 alias tn="tmux new-session -t "
 alias tk="tmux kill-session -t "
@@ -53,11 +51,12 @@ alias makefile="echo -e 'a.out: *.cpp \n\\tclang++ -g \`pkg-config --libs --cfla
 alias emacs="emacs -nw"
 
 # setting for proxy
-alias vpn="export https_proxy=http://10.16.142.1:7890 http_proxy=http://10.16.142.1:7890 all_proxy=socks5://10.16.142.1:7890"
-alias vpn="export https_proxy=http://10.16.4.72:7890 http_proxy=http://10.16.4.72:7890 all_proxy=socks5://10.16.4.72:7890"
-alias localvpn="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890"
-alias autosshvpn="export https_proxy=http://127.0.0.1:9990 http_proxy=http://127.0.0.1:9990 all_proxy=socks5://127.0.0.1:9990"
-alias sshvpn="export https_proxy=http://43.131.72.28:7890 http_proxy=http://43.131.72.28:7890 all_proxy=socks5://43.131.72.28:7890"
+# alias sshvpn="export https_proxy=http://43.131.72.28:7890 http_proxy=http://43.131.72.28:7890 all_proxy=socks5://43.131.72.28:7890"
+alias vpn="export https_proxy=http://10.16.142.1:7890 http_proxy=http://10.16.142.1:7890"
+alias macvpn="export https_proxy=http://10.16.4.72:7890 http_proxy=http://10.16.4.72:7890"
+alias localvpn="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890"
+alias autosshvpn="export https_proxy=http://127.0.0.1:9990 http_proxy=http://127.0.0.1:9990"
+alias sshvpn="export https_proxy=http://43.131.72.28:7890 http_proxy=http://43.131.72.28:7890"
 
 alias devpn="export https_proxy='' http_proxy='' all_proxy=''"
 alias vpninfo='echo -e https_proxy:"\t" $https_proxy "\n"http_proxy:"\t" $http_proxy  "\n"all_proxy:"\t" $all_proxy'
