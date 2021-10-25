@@ -9,16 +9,16 @@ alias torch_1_8="conda activate torch_1_8"
 
 alias vim="~/.local/bin/nvim.appimage " 
 
-alias ezsh="nvim ~/.zshrc"                                                                                                            
-alias ealias="nvim ~/.config/zsh/aliases.zsh"                                                                                         
-alias eenv="nvim ~/.config/zsh/env.zsh"                                                                                               
-alias eclash="nvim ~/.local/share/clash/config.yaml"                                                                                  
-alias eproxychains="sudo nvim /etc/proxychains.conf"                                                                                  
-                                                                                                                                      
-alias czsh="cat ~/.zshrc"                                                                                                             
-alias calias="lolcat ~/.config/zsh/aliases.zsh"                                                                                       
-alias cenv="lolcat ~/.config/zsh/env.zsh"                                                                                             
-alias cclash="local ~/.local/share/clash/config.yaml"                                                                                 
+alias ezsh="nvim ~/.zshrc"
+alias ealias="nvim ~/.config/zsh/aliases.zsh"
+alias eenv="nvim ~/.config/zsh/env.zsh"
+alias eclash="nvim ~/.local/share/clash/config.yaml"
+alias eproxychains="sudo nvim /etc/proxychains.conf"
+
+alias czsh="cat ~/.zshrc"
+alias calias="lolcat ~/.config/zsh/aliases.zsh"
+alias cenv="lolcat ~/.config/zsh/env.zsh"
+alias cclash="local ~/.local/share/clash/config.yaml"
 alias cproxychains="sudo lolcat /etc/proxychains.conf"
 
 alias cdzsh="cd ~/.config/zsh"
