@@ -19,7 +19,7 @@ alias czsh="cat ~/.zshrc"
 alias calias="lolcat ~/.config/zsh/aliases.zsh"
 alias cenv="lolcat ~/.config/zsh/env.zsh"
 alias cclash="local ~/.local/share/clash/config.yaml"
-alias cproxychains="sudo lolcat /etc/proxychains.conf"
+alias cproxychains="lolcat /etc/proxychains.conf"
 
 alias cdzsh="cd ~/.config/zsh"
 alias cdvim="cd ~/.config/nvim"
