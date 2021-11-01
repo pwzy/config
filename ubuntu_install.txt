@@ -13,8 +13,6 @@ options nouveau modeset=0
 然后保存，之后更新
 sudo update-initramfs -u
 
-
-
 # 重启运行以下命令如果无输出则禁用成功
 lsmod | grep nouveau
 
@@ -53,6 +51,7 @@ sudo service lightdm start
 conda config --set auto_activate_base False
 
 # 编辑 .zshrc 或者 .bashrc 加入python的路径
+sudo gedit ~/.bashrc 
 sudo gedit ~/.zshrc  
 # 加入
 # setting for anaconda python  一定要全路径不能用～代表家目录
@@ -107,4 +106,65 @@ GuessMainPID=no
 WantedBy=multi-user.target
 Alias=rc-local.service
 ##############################################################################################
+
+##############################################################################################
+# apt 镜象源
+##############################################################################################
+
+sudo cp /etc/apt/sources.list  /etc/apt/sources.list.bak
+sudo vim /etc/apt/sources.list 
+sudo nano /etc/apt/sources.list 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 中科大：
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# 默认注释了源码仓库，如有需要可自行取消注释
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal main restricted universe multiverse
+# deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal main restricted universe multiverse
+
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+# deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+# deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+# deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+# deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 清华：
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 阿里：
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
 
