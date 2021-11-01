@@ -168,3 +168,65 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted univers
 deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
 
+
+##############################################################################################
+# 安装软件
+##############################################################################################
+sudo apt install build-essential net-tools aptitude vim proxychains
+
+
+##############################################################################################
+# 配置软件
+##############################################################################################
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+# 配置proxychains
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+sudo vim /etc/proxychains.conf
+编辑最后一行
+socks5  127.0.0.1 7890
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+# 配置别名
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+sudo vim ~/.bashrc
+
+alias update="source ~/.zshrc"
+alias rg="ranger "
+alias ezsh="nvim ~/.zshrc"
+alias ebash="nvim ~/.bashrc"
+alias ealias="nvim ~/.config/zsh/aliases.zsh"
+alias eenv="nvim ~/.config/zsh/env.zsh"
+alias eclash="nvim ~/.local/share/clash/config.yaml"
+alias eproxychains="sudo nvim /etc/proxychains.conf"
+
+alias czsh="cat ~/.zshrc"
+alias cbash="cat ~/.bashrc"
+alias calias="lolcat ~/.config/zsh/aliases.zsh"
+alias cenv="lolcat ~/.config/zsh/env.zsh"
+alias cclash="local ~/.local/share/clash/config.yaml"
+alias cproxychains="lolcat /etc/proxychains.conf"
+
+alias cdzsh="cd ~/.config/zsh"
+alias cdvim="cd ~/.config/nvim"
+alias cdranger="cd ~/.config/ranger"
+
+alias ta="tmux attach-session -t "
+alias tn="tmux new-session -t "
+alias tk="tmux kill-session -t "
+alias tl="tmux ls"
+alias tp="tmuxp load "
+
+alias vpn="export https_proxy=http://10.16.142.1:7890 http_proxy=http://10.16.142.1:7890"
+alias macvpn="export https_proxy=http://10.16.4.72:7890 http_proxy=http://10.16.4.72:7890"
+alias localvpn="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890"
+alias autosshvpn="export https_proxy=http://127.0.0.1:9990 http_proxy=http://127.0.0.1:9990"
+alias sshvpn="export https_proxy=http://43.131.72.28:7890 http_proxy=http://43.131.72.28:7890"
+
+alias devpn="export https_proxy='' http_proxy='' all_proxy=''"
+alias vpninfo='echo -e https_proxy:"\t" $https_proxy "\n"http_proxy:"\t" $http_proxy  "\n"all_proxy:"\t" $all_proxy'
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+# 配置环境变量
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+export http_proxy="http://localhost:7890"
+export https_proxy="http://localhost:7890"
+
