@@ -2,6 +2,7 @@ alias update="source ~/.zshrc"
 
 alias rg="export ranger "
 alias rg="TERM=xterm-kitty ranger" 
+alias chafa="TERM=xterm-kitty chafa" 
 
 alias tf_2_3="source activate tf_2_3"
 alias torch_1_7="source activate torch_1_7"
