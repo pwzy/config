@@ -108,7 +108,7 @@ Plug 'mbbill/undotree'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 浮动终端
 Plug 'voldikss/vim-floaterm'
-" vim中的Ranger和依赖bclose
+" vim中的Ranger和依赖bclose, bclose 绑定快捷键为<leader>bd, 用于在不关闭窗口的情况下删除缓冲区
 Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'
 " n^3 插件，类似于ranger
