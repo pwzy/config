@@ -13,5 +13,5 @@ let g:floaterm_autoclose=2
 let g:floaterm_autoinsert=v:true
 
 " 打开快捷键
-let g:floaterm_keymap_toggle = '<Leader>ft'
+let g:floaterm_keymap_toggle = '<Leader>ot'
 
