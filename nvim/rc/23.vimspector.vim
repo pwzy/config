@@ -23,7 +23,7 @@ nmap <leader>dd :call vimspector#Launch()<CR>
 nmap <leader>dx :VimspectorReset<CR>
 
 nmap <leader>dc <plug>VimspectorContinue
-nmap <leader>dC <plug>VimspectorStop
+nmap <leader>dC <Plug>VimspectorRunToCursor 
 nmap <leader>dr <plug>VimspectorRestart
 nmap <leader>db <plug>VimspectorToggleBreakpoint
 nmap <leader>dB :call vimspector#ClearBreakpoints()<CR>
