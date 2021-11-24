@@ -64,7 +64,7 @@ Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 " SELECT
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 多光标操作
-Plug 'terryma/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " 快速选择相领的对象
 Plug 'vim-scripts/wildfire.vim'
 " 更改成对符号
