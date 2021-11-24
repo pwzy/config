@@ -14,30 +14,19 @@ sign define vimspectorBP text=☛ texthl=Normal
 sign define vimspectorBPDisabled text=☞ texthl=Normal
 sign define vimspectorPC text=🔶 texthl=SpellBad
 
-
+" for normal mode - the word under the cursor
+nmap <Leader>di <Plug>VimspectorBalloonEval
+" for visual mode, the visually selected text
+xmap <Leader>di <Plug>VimspectorBalloonEval
 
 nmap <leader>dd :call vimspector#Launch()<CR>
 nmap <leader>dx :VimspectorReset<CR>
-nmap <leader>de :VimspectorEval 
-nmap <leader>dw :VimspectorWatch 
-nmap <leader>ds :VimspectorShowOutput 
 
 nmap <leader>dc <plug>VimspectorContinue
-nmap <leader>dt <plug>VimspectorStop
-nmap <leader>db <plug>VimspectorToggleBreakpoint
-nmap <leader>dk <plug>VimspectorToggleConditionalBreakpoint
-nmap <leader>dp <plug>VimspectorPause
-nmap <leader>di <plug>VimspectorStepInto
-nmap <leader>do <plug>VimspectorStepOut
-nmap <leader>dv <plug>VimspectorStepOver
+nmap <leader>dC <plug>VimspectorStop
 nmap <leader>dr <plug>VimspectorRestart
-
-" 清除断点
+nmap <leader>db <plug>VimspectorToggleBreakpoint
 nmap <leader>dB :call vimspector#ClearBreakpoints()<CR>
-
-" F3 停止调试
-" F4 重新调试
-" F6 暂停调试
-" F10 单步
-" F11 进入
-" F12 跳出当前函数
+nmap <leader>ds <plug>VimspectorStepOver
+nmap <leader>dS <plug>VimspectorStepInto
+nmap <leader>do <plug>VimspectorStepOut
