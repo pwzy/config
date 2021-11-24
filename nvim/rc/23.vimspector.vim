@@ -1,4 +1,4 @@
-let g:vimspector_enable_mappings = 'HUMAN'
+let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
 
 function! s:read_template_into_buffer(template)
 	" has to be a function to avoid the extra space fzf#run insers otherwise
@@ -30,3 +30,4 @@ nmap <leader>dB :call vimspector#ClearBreakpoints()<CR>
 nmap <leader>ds <plug>VimspectorStepOver
 nmap <leader>dS <plug>VimspectorStepInto
 nmap <leader>do <plug>VimspectorStepOut
+
