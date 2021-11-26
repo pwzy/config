@@ -7,6 +7,7 @@ alias chafa="TERM=xterm-kitty chafa"
 alias tf_2_3="source activate tf_2_3"
 alias torch_1_7="source activate torch_1_7"
 alias torch_1_8="conda activate torch_1_8"
+alias torch_1_10="conda activate torch_1_10"
 
 alias vim="~/.local/bin/nvim.appimage " 
 
