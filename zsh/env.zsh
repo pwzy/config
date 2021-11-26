@@ -28,4 +28,4 @@ export PATH="/usr/local/texlive/2021/bin/x86_64-linux:$PATH"
 # setting for doom emacs
 export PATH="/home/jing/.emacs.d/bin:$PATH"
 # setting for python
-export PATH="/home/jing/anaconda3/envs/torch_1_8/bin:$PATH"
+export PATH="/home/jing/anaconda3/envs/torch_1_10/bin:$PATH"
