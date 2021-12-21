@@ -74,16 +74,20 @@ export PATH="/home/jing/anaconda3/bin:$PATH"
 3. 创建自启动脚本
   sudo vim /etc/rc.local
 4. 并添加以下内容： #不能添加阻塞进程 不然开机卡死
+
   #!/bin/sh
-  echo "看到这行字，说明添加自启动脚本成功。" > /usr/local/test.log
+  (cd /home/user && nohup ./frp/frpc -c ./frp/frpc.ini &)
+  xset r rate 250 50
+  echo "看到这行字，说明添加自启动脚本成功。" > /home/user/hhd.txt
   exit 0
+  
 5. 给rc.local加上权限
   sudo chmod 755 /etc/rc.local
 6. 测试脚本是否成功
   systemctl restart rc-local
   
 ##############################
-(cd /home/jing && nohup ./frp/frpc -c ./frp/frpc.ini &)
+(cd /home/user && nohup ./frp/frpc -c ./frp/frpc.ini &)
 
 ##############################################################################################
 # rc-local.service 的内容
