@@ -1,2 +1,3 @@
     - 'DOMAIN-SUFFIX,pypi.org,Proxies'
+    - 'DOMAIN-SUFFIX,ghcr.io,Proxies'
     - 'DOMAIN-SUFFIX,jpopsuki.eu,Proxies'
