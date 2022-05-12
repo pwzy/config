@@ -2,11 +2,11 @@
   "adapters": {
     "debugpy": {
       "command": [
-        "/home/jing/anaconda3/envs/torch_1_10/bin/python3",
+        "/home/jing/anaconda3/envs/torch_1_12/bin/python3",
         "${gadgetDir}/debugpy/build/lib/debugpy/adapter"
       ],
       "configuration": {
-        "python": "/home/jing/anaconda3/envs/torch_1_10/bin/python3",
+        "python": "/home/jing/anaconda3/envs/torch_1_12/bin/python3",
         "subProcess": false
       },
       "name": "debugpy"
