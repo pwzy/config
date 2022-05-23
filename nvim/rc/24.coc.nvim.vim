@@ -11,7 +11,6 @@
 let g:coc_global_extensions = [
     \ 'coc-explorer',
     \ 'coc-jedi',
-    \ 'coc-pyright',
     \ 'coc-json',
     \ 'coc-yank',
     \ 'coc-lists',
