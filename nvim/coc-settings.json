@@ -10,7 +10,7 @@
     },
 
     // setting for coc-jedi
-    "jedi.executable.command": "~/anaconda3/envs/torch_1_12/bin/jedi-language-server",
+    // "jedi.executable.command": "~/anaconda3/envs/torch_1_12/bin/jedi-language-server",
     "jedi.diagnostics.enable": false,
     
     // setting for coc-pyright
