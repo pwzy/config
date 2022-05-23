@@ -148,6 +148,7 @@ Plug 'honza/vim-snippets'
 Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-python'}
 " vim sourcetrail 插件
 Plug 'CoatiSoftware/vim-sourcetrail'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NOOTES
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -166,6 +167,10 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 Plug 'mattn/vim-gist', {'depends': 'mattn/webapi-vim'}
 Plug 'mattn/webapi-vim'
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" COPY
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'ojroques/vim-oscyank', {'branch': 'main'}
 
 
 
