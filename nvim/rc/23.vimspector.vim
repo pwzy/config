@@ -27,7 +27,7 @@ nmap <leader>dC <Plug>VimspectorRunToCursor
 nmap <leader>dr <plug>VimspectorRestart
 nmap <leader>db <plug>VimspectorToggleBreakpoint
 nmap <leader>dB :call vimspector#ClearBreakpoints()<CR>
-nmap <leader>ds <plug>VimspectorStepOver
+nmap <leader>dn <plug>VimspectorStepOver
 nmap <leader>dS <plug>VimspectorStepInto
 nmap <leader>do <plug>VimspectorStepOut
 
