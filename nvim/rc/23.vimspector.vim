@@ -22,12 +22,15 @@ xmap <Leader>di <Plug>VimspectorBalloonEval
 nmap <leader>dd :call vimspector#Launch()<CR>
 nmap <leader>dx :VimspectorReset<CR>
 
-nmap <leader>dc <plug>VimspectorContinue
-nmap <leader>dC <Plug>VimspectorRunToCursor 
-nmap <leader>dr <plug>VimspectorRestart
-nmap <leader>db <plug>VimspectorToggleBreakpoint
-nmap <leader>dB :call vimspector#ClearBreakpoints()<CR>
 nmap <leader>dn <plug>VimspectorStepOver
-nmap <leader>dS <plug>VimspectorStepInto
+nmap <leader>ds <plug>VimspectorStepInto
+
 nmap <leader>do <plug>VimspectorStepOut
 
+nmap <leader>dc <plug>VimspectorContinue
+nmap <leader>dC <Plug>VimspectorRunToCursor 
+
+nmap <leader>dr <plug>VimspectorRestart
+
+nmap <leader>db <plug>VimspectorToggleBreakpoint
+nmap <leader>dB :call vimspector#ClearBreakpoints()<CR>
