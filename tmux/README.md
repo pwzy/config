@@ -13,4 +13,9 @@ alias tp="tmuxp load "
 3. 安装tmux插件管理器TPM
 https://github.com/tmux-plugins/tpm
 
-4. 安装tmux
+4. 安装tmux主题插件
+# 安装插件
+set -g @plugin 'arcticicestudio/nord-tmux'
+
+6. 进入tmux，使用 prefix + I 进行插件的安装
+
