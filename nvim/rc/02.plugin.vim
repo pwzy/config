@@ -99,7 +99,7 @@ Plug 'jlanzarotta/bufexplorer'
 " 利用f快速移动
 Plug 'unblevable/quick-scope'
 " 快速撤销
-Plug 'mbbill/undotree'
+" Plug 'mbbill/undotree'
 
 
 
