@@ -142,8 +142,6 @@ Plug 'honza/vim-snippets'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim 调试插件
 Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-python'}
-" vim sourcetrail 插件
-Plug 'CoatiSoftware/vim-sourcetrail'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NOOTES
