@@ -4,7 +4,7 @@ export PATH="/Users/pwzy/anaconda3/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 # OTHERS ###########################################################
-export TERM=xterm-kitty
+export TERM=xterm-256color
 
 export EDITOR="/home/jing/.local/bin/nvim.appimage"
 export VISUAL="/home/jing/.local/bin/nvim.appimage"
