@@ -1,0 +1,353 @@
+1. 更换镜像并安装网卡驱动
+1.1 更换apt镜像
+参考：https://mirror.tuna.tsinghua.edu.cn/help/ubuntu/
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo gedit /etc/apt/sources.list
+#########################################################################################################
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
+#########################################################################################################
+sudo apt update 
+
+1.2 安装网卡驱动
+# 参考：https://github.com/aircrack-ng/rtl8812au
+sudo apt-get install dkms
+sudo make dkms_install
+
+2. 安装中文输入法
+2.1 到设置中，选择区域与语言
+2.2 点击管理已安装的语言
+2.3 确定中文（简体）已经安装！如果没有安装则安装Chinese (Simplified)
+2.4 完成后重启系统，再次打开区域与语言：选择输入源 + ：点击Chinese (Intelligent Pinyin)即可。
+
+3. 安装必要的库
+sudo apt install build-essential qt5-default cmake vim proxychains git ranger net-tools curl 
+
+4. 安装filebrowser传输文件
+参考：https://github.com/filebrowser/filebrowser
+下载后解压，将filebrowser移动到用户home目录，初始用户名与密码为admin
+nohup ./filebrowser  -a 0.0.0.0 -r ~ &
+
+5. 安装nvidia驱动
+参考：https://www.nvidia.com/download/index.aspx
+选择：GeForce RTX 3090 
+下载后开始安装
+5.1 运行 lsmod | grep nouveau，如果有输出则代表nouveau正在加载。需要我们手动禁掉nouveau。
+sudo init 3
+sudo vim /etc/modprobe.d/blacklist.conf
+在末尾加入
+blacklist nouveau
+options nouveau modeset=0
+然后保存，之后更新
+sudo update-initramfs -u
+5.2. 重启后运行
+sudo init 3
+sudo ./software/NVIDIA-Linux-x86_64-515.48.07.run 
+5.3 最后恢复图形化界面
+sudo init 5
+
+6. 安装frp
+参考：https://github.com/fatedier/frp
+wget -c https://github.com/fatedier/frp/releases/download/v0.43.0/frp_0.43.0_linux_amd64.tar.gz
+mv frp_0.43.0_linux_amd64 frp
+rm frp_0.43.0_linux_amd64.tar.gz && mv frp ~
+6.1 配置frp
+vim frp/frpc.ini 
+#######################################################################################################
+[common]
+server_addr = server-ip
+server_port = 7000
+
+[ssh]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 22
+remote_port = 3456
+#######################################################################################################
+6.2 运行
+nohup ./frp/frpc -c ./frp/frpc.ini  &
+
+7. 添加自启动脚本
+7.1. 在 /etc/systemd/system 目录下创建软链接
+sudo ln -s /lib/systemd/system/rc-local.service /etc/systemd/system/
+7.2. 修改服务文件
+sudo vim /lib/systemd/system/rc-local.service
+在文件尾部中添加：
+[Install]
+WantedBy=multi-user.target
+Alias=rc-local.service
+7.3. 创建自启动脚本
+sudo vim /etc/rc.local
+添加以下内容： #不能添加阻塞进程 不然开机卡死
+#######################################################################################################
+#!/bin/sh
+(cd /home/user && nohup ./frp/frpc -c ./frp/frpc.ini &)
+xset r rate 250 50
+echo "看到这行字，说明添加自启动脚本成功。" > /home/user/hhd.txt
+exit 0
+#######################################################################################################
+7.4 给rc.local加上权限
+sudo chmod 755 /etc/rc.local
+7.5 测试脚本是否成功 (注意修改rc-local.service文件中的用户名)
+systemctl restart rc-local
+
+# rc-local.service 的内容
+#######################################################################################################
+[Unit]
+Description=/etc/rc.local Compatibility
+Documentation=man:systemd-rc-local-generator(8)
+ConditionFileIsExecutable=/etc/rc.local
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/etc/rc.local start
+TimeoutSec=0
+RemainAfterExit=yes
+GuessMainPID=no
+
+[Install]
+WantedBy=multi-user.target
+Alias=rc-local.service
+#######################################################################################################
+
+8. 安装Hack Nerd Font Mono字体
+参考：https://github.com/ryanoasis/nerd-fonts
+8.1. 下载 Hack.zip 后解压
+wget -c https://github.com/ryanoasis/nerd-fonts/releases/download/2.2.0-RC/Hack.zip
+unzip -d hack Hack.zip 
+8.2 解压字体文件后，拷贝到 /usr/share/fonts 目录中
+sudo cp -r hack /usr/share/fonts
+8.3 进入主目录，执行以下命令
+  sudo mkfontscale 
+  sudo mkfontdir
+  sudo fc-cache -fv
+8.4 输入 fc-list 即可查看安装好的字体
+fc-list | grep Hack
+8.5 设置终端字体为 Hack Nerd Font Mono
+
+9. 配置终端
+9.1. 检查系统支持的shell类型
+cat /etc/shells
+9.2. 安装zsh
+sudo apt-get install -y zsh
+如果安装时未选择默认终端，则可以使用以下命令
+chsh -s /usr/bin/zsh
+重启终端即可变为zsh
+9.3 安装zimfw
+参考：https://github.com/zimfw/zimfw
+curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+在zimrc后面加上插件
+#######################################################################################################
+zmodule eriner
+# zmodule magicmace
+zmodule zdharma/fast-syntax-highlighting
+zmodule supercrabtree/k
+zmodule hlissner/zsh-autopair
+zmodule pabloariasal/zfm
+zmodule agkozak/zsh-z
+zmodule Aloxaf/fzf-tab
+#######################################################################################################
+zimfw install 
+9.4 安装startship
+参考： https://github.com/starship/starship
+curl -sS https://starship.rs/install.sh | sh
+在.zshrc最后一行加上
+eval "$(starship init zsh)"
+9.4.1 startship的配置文件
+vim .config/starship.toml
+写入配置即可
+
+10. 其他依赖与配置
+10.1. 安装nvim
+参考：https://github.com/neovim/neovim
+mkdir ~/.local/bin
+cd ~/.local/bin && wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
+chmod 777 nvim.appimage
+
+10.2. 安装brew
+
+- Run these two commands in your terminal to add Homebrew to your PATH:
+    echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/jing/.zprofile
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+10.3 安装fzf与其他软件
+参考：https://github.com/junegunn/fzf
+brew install fzf
+$(brew --prefix)/opt/fzf/install
+brew install exa
+
+10.4 其他配置
+git clone https://github.com/pwzy/config.git
+cp -r nvim zsh ~/.config/
+在.zshrc最后一行加入
+source ~/.config/zsh/zshrc
+
+11. 安装Anaconda
+11.1 创建虚拟环境
+conda create -n torch_1_12 python=3.9
+cd ~/software
+pip install numpy matplotlib scipy opencv-python Pillow PyYAML requests tqdm protobuf tensorboard visdom pandas scikit-learn 
+
+
+11. 配置vim
+11.1 安装npm
+brew install npm
+11.2. 安装vim-plug
+参考： https://github.com/junegunn/vim-plug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+进行其他vim插件安装即可
+
+
+12. 配置proxychains
+sudo vim /etc/proxychains.conf
+最后一行改为 socks5  127.0.0.1 7890
+
+13. 配置tmux
+sudo apt install tmux
+安装TPM： 参考：https://github.com/tmux-plugins/tpm
+
+.tmux.conf 文件内容
+#######################################################################################################
+# 安装TPM
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
+# 安装插件
+set -g @plugin 'arcticicestudio/nord-tmux'
+
+# Other examples:
+# set -g @plugin 'github_username/plugin_name'
+# set -g @plugin 'github_username/plugin_name#branch'
+# set -g @plugin 'git@github.com:user/plugin'
+# set -g @plugin 'git@bitbucket.com:user/plugin'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
+
+
+#################################################################################
+# 修改设置
+#################################################################################
+# 更改前缀键
+set -g prefix C-a
+unbind C-b
+bind a send-prefix
+
+# 设置esc键无延迟
+set -s escape-time 0
+
+# 设置鼠标
+set-option -g mouse on
+
+# 设置status颜色
+# set-option -g status-style fg=white
+# set-option -g status-style bg=colour93
+
+# 绑定刷新配置文件快捷键
+bind-key r source-file ~/.tmux.conf \; \
+                   display-message "source-file done"
+
+# 绑定hjkl键为面板切换的上下左右键
+bind -r k select-pane -U # 绑定k为↑
+bind -r j select-pane -D # 绑定j为↓
+bind -r h select-pane -L # 绑定h为←
+bind -r l select-pane -R # 绑定l为→
+#######################################################################################################
+
+14. 开机自动挂载硬盘
+查询本机可以识别的硬盘和分区：sudo fdisk -l
+列出所有可用块设备的信息： lsblk
+查看块设备的文件系统类型、LABEL、UUID等信息:  sudo blkid
+编辑fstab用于自动挂载硬盘
+sudo vim /etc/fstab 
+在最后一行加上：
+UUID="0d5d47ff-a441-4a38-827a-5e70bd47c14a" /home/user/project ext4 defaults 0 0
+执行sudo mount -a用于fstab文件中所有设备的挂载
+sudo mount -a
+
+
+15. clash安装
+15.1 有界面配置
+参考：https://github.com/Fndroid/clash_for_windows_pkg/releases
+wget https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.20/Clash.for.Windows-0.19.20-x64-linux.tar.gz
+tar -xvf Clash*.gz
+添加图标： vim ~/.local/share/applications/clash.desktop 
+#######################################################################################################
+[Desktop Entry]
+Type=Application
+Name=clash for windows
+# Comment=Launches the ranger file manager
+Icon=/home/jing/software/logo.png
+# Terminal=true
+Exec=/home/jing/software/Clash/cfw
+# Categories=ConsoleOnly;System;FileTools;FileManager
+# MimeType=inode/directory;
+# Keywords=File;Manager;Browser;Explorer;Launcher;Vi;Vim;Python
+#######################################################################################################
+默认配置： ~/.config/clash/config.yaml
+
+15.2. 无界面配置
+参考：https://github.com/Dreamacro/clash/releases
+https://github.com/Dreamacro/clash/releases/download/v1.10.6/clash-linux-amd64-v1.10.6.gz
+新建系统服务：
+sudo vim /etc/systemd/system/clash.service
+#######################################################################################################
+[Unit]
+Description=clash-core
+[Service]
+Type=simple
+ExecStart=/home/jing/clash-core -f /home/user/.config/clash/config.yaml
+#######################################################################################################
+# 重新加载服务
+sudo systemctl daemon-reload 
+# 启动服务
+sudo systemctl start clash.service
+
+# 设置ui
+# 方法一：比较麻烦
+参考：https://github.com/Dreamacro/clash-dashboard/tree/gh-pages
+（使用gh-pages分支中编译好的软件）
+直接Download ZIP即可,或者clone
+git clone https://github.com/Dreamacro/clash-dashboard.git
+# 切换到gh-pages编译好的分支
+git checkout gh-pages
+修改clash配置文件中：
+external-controller: 0.0.0.0:9090
+external-ui: /home/user/software/clash-dashboard
+secret:'112233'
+重启服务即可
+# 方法二：
+修改clash配置文件中：
+external-controller: 0.0.0.0:9090
+访问：http://clash.razord.top 填入host与端口即可进行远程控制
+
+
+# 其他软件安装
+#######################################################################################################
+brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump   \
+            ag ripgrep node tldr lazygit lazydocker cloc hub exa     \
+            glances tree ShellCheck cheat GoAccess navi nnn z zoxide \
+            w3m chafa ffmpeg tmux docker git texlab ctags annie bear \
+            youtube-dl cmake tig socat sxiv percol sshfs git-delta   \
+            dust duf broot ripgrep choose-rust sd zoxide hyperfine   \
+            clementtsang/bottom/bottom gping procs rs/tap/curlie     \
+            sampler hexyl googler terminal-notifier jrnl onefetch    \
+            ddgr xplr fanyi translate-shell gdu lsd bpytop lolcat    \
+
+
+
+
