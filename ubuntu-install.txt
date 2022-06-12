@@ -335,6 +335,31 @@ secret:'112233'
 external-controller: 0.0.0.0:9090
 访问：http://clash.razord.top 填入host与端口即可进行远程控制
 
+16. kitty安装
+参考：https://sw.kovidgoyal.net/kitty/binary/
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+设置kitty桌面应用：
+ln -s ~/.local/kitty.app/bin/kitty ~/.local/bin/
+cp ~/.local/kitty.app/share/applications/kitty.desktop ~/.local/share/applications/
+sed -i "s|Icon=kitty|Icon=/home/$USER/.local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png|g" ~/.local/share/applications/kitty*.desktop
+设置kitty配置文件
+vim ~/.config/kitty/kitty.conf
+#######################################################################################################
+macos_option_as_alt yes
+
+font_family       Hack Nerd Font Mono
+bold_font         Hack Nerd Font Mono
+italic_font       Hack Nerd Font Mono
+bold_italic_font  Hack Nerd Font Mono
+
+font_size 15.0
+
+background_opacity 0.6
+
+# tab_bar_style fade
+tab_bar_style  powerline
+#######################################################################################################
+
 
 # 其他软件安装
 #######################################################################################################
@@ -347,7 +372,3 @@ brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump   \
             clementtsang/bottom/bottom gping procs rs/tap/curlie     \
             sampler hexyl googler terminal-notifier jrnl onefetch    \
             ddgr xplr fanyi translate-shell gdu lsd bpytop lolcat    \
-
-
-
-
