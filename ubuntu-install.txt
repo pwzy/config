@@ -311,6 +311,9 @@ Description=clash-core
 [Service]
 Type=simple
 ExecStart=/home/jing/clash-core -f /home/user/.config/clash/config.yaml
+
+[Install]
+WantedBy=multi-user.target
 #######################################################################################################
 # 重新加载服务
 sudo systemctl daemon-reload 
@@ -325,6 +328,9 @@ Description=test
 [Service]
 Type=simple
 ExecStart=/bash /opt/clash.sh
+
+[Install]
+WantedBy=multi-user.target
 #######################################################################################################
 然后再编辑要运行的脚本：
 sudo vim /opt/clash.sh
