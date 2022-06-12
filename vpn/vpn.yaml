@@ -1,3 +1,20 @@
-    - 'DOMAIN-SUFFIX,pypi.org,Proxies'
-    - 'DOMAIN-SUFFIX,ghcr.io,Proxies'
-    - 'DOMAIN-SUFFIX,jpopsuki.eu,Proxies'
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: '0.0.0.0:9090'
+proxies:
+    - { name: '香港HKT 01', type: trojan, server: p3kbve.qaglw3.xyz, port: 10919, password: 47a0fd38-6bfc-4333-914a-02f56949ccc4, udp: true, sni: 216-244-81-242.nhost.00cdn.com }
+    - { name: '香港HKT 02', type: trojan, server: p3kbve.qaglw3.xyz, port: 10920, password: 47a0fd38-6bfc-4333-914a-02f56949ccc4, udp: true, sni: 216-244-81-242.nhost.00cdn.com }
+    - { name: '香港HKT 03', type: trojan, server: p3kbve.qaglw3.xyz, port: 10909, password: 47a0fd38-6bfc-4333-914a-02f56949ccc4, udp: true, sni: 216-244-81-242.nhost.00cdn.com }
+proxy-groups:
+    - { name: Proxies, type: select, proxies: [Automatic, '香港HKT 01', '香港HKT 02', '香港HKT 03', '香港Akari 01', '香港Lshiy 01', '香港Lshiy 02', '狮城Landups 01', '狮城Landups 02', '狮城Starhub 01', '狮城DigitalOcean 03', '狮城DigitalOcean 04', '狮城Oracle 01', '日本Owl 01', '日本Sonet 01', '台湾Hinet 01', '台湾Hinet 02', '台湾Hinet 04', '台湾Scloud 01', '台湾Scloud 02', '印尼APIK 01', '越南FPT 01', '泰国CAT 01', '柬埔寨Metfone 01', '韩国Oracle 01', '韩国Oracle 02', '美国Cera 01', '美国Cera 02', '美国Nato 02', '美国Misaka 01', '美国Misaka 02', '美国Wowrack 01', '德国Oracle 01', '巴西Lets 01', '澳洲Presence 01', '法国FEELB 01', '俄罗斯Melbikomas 01', '英国Kamatera 01', '印度Linode 01', '巴基斯坦Multinet 01', '加拿大Limewave 01', '意大利Seflow 01', '荷兰Misaka 01', '以色列Omc 01', '菲律宾Eastern 01', '土耳其Bursabil 01', '阿根廷T-Wireless 01', '爱沙尼亚CSpace 01'] }
+    - { name: Automatic, type: url-test, url: 'http://www.gstatic.com/generate_204', interval: 300, proxies: ['香港HKT 01', '香港HKT 02', '香港HKT 03', '香港Akari 01', '香港Lshiy 01', '香港Lshiy 02', '狮城Landups 01', '狮城Landups 02', '狮城Starhub 01', '狮城DigitalOcean 03', '狮城DigitalOcean 04', '狮城Oracle 01', '日本Owl 01', '日本Sonet 01', '台湾Hinet 01', '台湾Hinet 02', '台湾Hinet 04', '台湾Scloud 01', '台湾Scloud 02', '印尼APIK 01', '越南FPT 01', '泰国CAT 01', '柬埔寨Metfone 01', '韩国Oracle 01', '韩国Oracle 02', '美国Cera 01', '美国Cera 02', '美国Nato 02', '美国Misaka 01', '美国Misaka 02', '美国Wowrack 01', '德国Oracle 01', '巴西Lets 01', '澳洲Presence 01', '法国FEELB 01', '俄罗斯Melbikomas 01', '英国Kamatera 01', '印度Linode 01', '巴基斯坦Multinet 01', '加拿大Limewave 01', '意大利Seflow 01', '荷兰Misaka 01', '以色列Omc 01', '菲律宾Eastern 01', '土耳其Bursabil 01', '阿根廷T-Wireless 01', '爱沙尼亚CSpace 01'] }
+rules:
+    - 'DOMAIN,sublink.online,DIRECT'
+    - 'DOMAIN-SUFFIX,ads.youtube.com,REJECT'
+    - 'DOMAIN,images-cn.ssl-images-amazon.com,DIRECT'
+    - 'IP-CIDR,119.28.28.28/32,DIRECT,no-resolve'
+    - 'GEOIP,CN,DIRECT'
+    - 'MATCH,Final'
