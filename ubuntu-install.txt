@@ -317,6 +317,25 @@ sudo systemctl daemon-reload
 # 启动服务
 sudo systemctl start clash.service
 
+# 设置自启动脚本服务
+sudo vim /etc/systemd/system/example.service
+#######################################################################################################
+[Unit]
+Description=test
+[Service]
+Type=simple
+ExecStart=/bash /opt/clash.sh
+#######################################################################################################
+然后再编辑要运行的脚本：
+sudo vim /opt/clash.sh
+#######################################################################################################
+/home/jing/clash-core -f /home/user/.config/clash/config.yaml
+#######################################################################################################
+加权限
+sudo chmod 777 clash.sh
+sudo systemctl daemon-reload 之后即可运行
+
+
 # 设置ui
 # 方法一：比较麻烦
 参考：https://github.com/Dreamacro/clash-dashboard/tree/gh-pages
