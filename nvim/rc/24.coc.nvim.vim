@@ -8,6 +8,18 @@
 " coc-pyright 不能进行opencv的补全
 " coc-snippets 需要安装vim-snippets获得可用片段
 
+" cv2补全：
+" 为opencv生成补全的存根：
+" 方式1:
+" 参考：https://github.com/opencv/opencv/issues/14590
+" curl -sSL https://raw.githubusercontent.com/bschnurr/python-type-stubs/add-opencv/cv2/__init__.pyi \
+    " -o $($_pip run python -c 'import cv2, os; print(os.path.dirname(cv2.__file__))')/cv2.pyi
+" unset _pip
+" 方式2:
+" pip install mypy
+" cd $(python -c 'import cv2, os; print(os.path.dirname(cv2.__file__))')
+" stubgen -m cv2 -o .
+
 let g:coc_global_extensions = [
     \ 'coc-explorer',
     \ 'coc-jedi',
