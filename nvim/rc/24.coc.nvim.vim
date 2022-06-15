@@ -13,12 +13,18 @@
 " 方式1:
 " 参考：https://github.com/opencv/opencv/issues/14590
 " curl -sSL https://raw.githubusercontent.com/bschnurr/python-type-stubs/add-opencv/cv2/__init__.pyi \
-    " -o $($_pip run python -c 'import cv2, os; print(os.path.dirname(cv2.__file__))')/cv2.pyi
+    " -o $($_pip run python -c 'import cv2, os; print(os.path.dirname(cv2.__file__))')/__init__.pyi
 " unset _pip
 " 方式2:
 " pip install mypy
 " cd $(python -c 'import cv2, os; print(os.path.dirname(cv2.__file__))')
 " stubgen -m cv2 -o .
+" mv cv2.pyi __init__.pyi 即可
+" 参考：https://github.com/opencv/opencv/issues/14590
+" 一定要是__init__.pyi
+" 或者不用生成直接从库中拷贝，参考：https://github.com/LunarVim/LunarVim/issues/1788 
+“ 下载：https://github.com/opencv/opencv/issues/14590#issuecomment-873003116
+" https://raw.githubusercontent.com/microsoft/python-type-stubs/main/cv2/__init__.pyi
 
 let g:coc_global_extensions = [
     \ 'coc-explorer',
