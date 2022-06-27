@@ -1,23 +1,19 @@
 # PATH ###########################################################
-export PATH="/Users/pwzy/anaconda3/bin:$PATH"
-# export PATH="/Users/pwzy/.local/bin:$PATH"
-export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="~/anaconda3/bin:$PATH"
+export PATH="/Users/pwzy/.local/bin:$PATH"
 
 # OTHERS ###########################################################
 export TERM=xterm-256color
 
-export EDITOR="/home/jing/.local/bin/nvim.appimage"
-export VISUAL="/home/jing/.local/bin/nvim.appimage"
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 export LDFLAGS="-L/usr/local/opt/llvm/lib"
 export CPPFLAGS="-I/usr/local/opt/llvm/include"
 
-# export http_proxy="http://localhost:7890"
-# export https_proxy="http://localhost:7890"
-export all_proxy="socks5://localhost:7890"
-
-export GOPATH="/Users/pwzy/go"
-export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
+export http_proxy="http://localhost:7890"
+export https_proxy="http://localhost:7890"
+# export all_proxy="socks5://localhost:7890"
 
 export PATH="/usr/local/cuda-11.4/bin:$PATH"
 export LD_LIBRARY_PATH="/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH"
@@ -25,7 +21,5 @@ export LD_LIBRARY_PATH="/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH"
 # setting for TexLive
 export PATH="/usr/local/texlive/2021/bin/x86_64-linux:$PATH"
 
-# setting for doom emacs
-export PATH="/home/jing/.emacs.d/bin:$PATH"
 # setting for python
-export PATH="/home/jing/anaconda3/envs/torch_1_10/bin:$PATH"
+export PATH="~/anaconda3/bin:$PATH"
