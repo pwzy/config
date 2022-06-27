@@ -3,12 +3,10 @@ alias update="source ~/.zshrc"
 alias ra="ranger " 
 alias chafa="TERM=xterm-kitty chafa" 
 
-alias tf_2_3="source activate tf_2_3"
-alias torch_1_7="source activate torch_1_7"
-alias torch_1_8="conda activate torch_1_8"
-alias torch_1_10="conda activate torch_1_10"
+alias torch_1_12="conda activate torch_1_12"
 
-alias vim="~/.local/bin/nvim.appimage " 
+alias vim="~/.local/bin/nvim " 
+alias nvim="~/.local/bin/nvim " 
 
 alias ezsh="nvim ~/.zshrc"
 alias ealias="nvim ~/.config/zsh/aliases.zsh"
@@ -31,7 +29,6 @@ alias sshfslab="mkdir ~/Downloads/jing && sshfs jing@192.168.3.4:/home/jing ~/Do
 alias sshfsmount="if [ ! -d ~/Downloads/jing ]; then mkdir ~/Downloads/jing; fi && sshfs jing@192.168.3.4:/home/jing ~/Downloads/jing"
 alias sshfsumount="umount ~/Downloads/jing"
 alias sshlab="ssh -X jing@192.168.3.4"
-alias sshlab1="ssh -X jing@10.16.4.72"
 
 alias ta="tmux attach-session -t "
 alias tn="tmux new-session -t "
@@ -57,9 +54,6 @@ alias lc='ll -schanged'       # Long format, newest status change (ctime) last
 alias speed="wget -c https://developer.download.nvidia.com/compute/cuda/11.4.1/local_installers/cuda_11.4.1_470.57.02_linux.run"
 alias makefile="echo -e 'a.out: *.cpp \n\\tclang++ -g \`pkg-config --libs --cflags opencv4\` *.cpp -o a.out' "
 
-# setting for emacs
-alias emacs="emacs -nw"
-
 # setting for proxy
 # alias sshvpn="export https_proxy=http://43.131.72.28:7890 http_proxy=http://43.131.72.28:7890 all_proxy=socks5://43.131.72.28:7890"
 alias vpn="export https_proxy=http://10.16.142.1:7890 http_proxy=http://10.16.142.1:7890"
@@ -70,10 +64,5 @@ alias sshvpn="export https_proxy=http://43.131.72.28:7890 http_proxy=http://43.1
 
 alias devpn="export https_proxy='' http_proxy='' all_proxy=''"
 alias vpninfo='echo -e https_proxy:"\t" $https_proxy "\n"http_proxy:"\t" $http_proxy  "\n"all_proxy:"\t" $all_proxy'
-
-
-
-
-
 
 
