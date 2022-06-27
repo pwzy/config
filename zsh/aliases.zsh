@@ -24,6 +24,7 @@ alias cproxychains="lolcat /etc/proxychains.conf"
 
 alias cdzsh="cd ~/.config/zsh"
 alias cdvim="cd ~/.config/nvim"
+alias cdconf="cd ~/.config/"
 alias cdranger="cd ~/.config/ranger"
 alias cdpic="cd ~/Pictures"
 alias sshfslab="mkdir ~/Downloads/jing && sshfs jing@192.168.3.4:/home/jing ~/Downloads/jing"
