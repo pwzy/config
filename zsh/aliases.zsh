@@ -8,6 +8,8 @@ alias torch_1_12="conda activate torch_1_12"
 alias vim="~/.local/bin/nvim " 
 alias nvim="~/.local/bin/nvim " 
 
+alias vscode-server="echo 'code-server serve-local --host 0.0.0.0 --connection-token jing'"
+
 alias ezsh="nvim ~/.zshrc"
 alias ealias="nvim ~/.config/zsh/aliases.zsh"
 alias eenv="nvim ~/.config/zsh/env.zsh"
