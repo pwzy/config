@@ -32,7 +32,7 @@ alias sshfsmount="if [ ! -d ~/Downloads/jing ]; then mkdir ~/Downloads/jing; fi 
 alias sshfsumount="umount ~/Downloads/jing"
 alias sshlab="ssh -X jing@192.168.3.4"
 
-alias ta="tmux attach-session -t "
+alias ta="tmux attach-session -dt "
 alias tn="tmux new-session -t "
 alias tk="tmux kill-session -t "
 alias tl="tmux ls"
