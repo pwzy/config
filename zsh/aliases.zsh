@@ -3,6 +3,8 @@ alias update="source ~/.zshrc"
 alias ra="ranger " 
 alias chafa="TERM=xterm-kitty chafa" 
 
+alias icat="kitty +kitten icat"
+
 alias torch_1_12="conda activate torch_1_12"
 
 alias vim="~/.local/bin/nvim " 
