@@ -413,3 +413,28 @@ brew install fzf vim nvim llvm fd bat ccat thefuck ranger autojump   \
             clementtsang/bottom/bottom gping procs rs/tap/curlie     \
             sampler hexyl googler terminal-notifier jrnl onefetch    \
             ddgr xplr fanyi translate-shell gdu lsd bpytop lolcat    \
+
+
+# 部署frp服务
+参考： https://github.com/stilleshan/frpc/tree/master
+复制frpc.service文件到 /lib/systemd/system 文件夹中
+sudo systemctl enable frpc  #设置服务开机启动
+sudo systemctl start frpc   #启动服务
+
+frpc.service的文件内容如下：
+#######################################################################################################
+[Unit]
+Description=Frp Server Service
+After=network.target syslog.target
+Wants=network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=5s
+ExecStart=/usr/local/frp/frpc -c /usr/local/frp/frpc.ini
+
+[Install]
+WantedBy=multi-user.target
+#######################################################################################################
+
