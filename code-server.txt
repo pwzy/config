@@ -1,0 +1,9 @@
+Repo: https://github.com/coder/code-server
+
+sudo systemctl enable --now code-server@$USER
+sudo systemctl status code-server@jing
+sudo systemctl start code-server@jing
+sudo systemctl stop code-server@jing
+sudo systemctl restart code-server@jing
+
+
