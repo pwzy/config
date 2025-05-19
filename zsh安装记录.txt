@@ -1,0 +1,94 @@
+1. 安装kitty终端并设置
+
+#############################################
+# .config/kitty.conf文件的设置
+#############################################
+macos_option_as_alt yes
+shell_integration no-cursor 
+
+background_image /Users/pwzy/Pictures/hhd.png
+background_image_layout scaled
+background_image_linear yes 
+dynamic_background_opacity yes
+background_tint 0.7
+
+font_family       Hack Nerd Font Mono
+bold_font         Hack Nerd Font Mono
+italic_font       Hack Nerd Font Mono
+bold_italic_font  Hack Nerd Font Mono
+
+font_size 15.0
+
+background_opacity 0.7
+
+# tab_bar_style fade
+tab_bar_style  powerline
+
+cursor_shape block
+#############################################
+
+2. 安装zimfw 
+
+参考：https://github.com/zimfw/zimfw
+安装后设置.zimrc
+# 注释掉 zmodule asciiship
+#################################
+# 这两个需要一起安装，eriner依赖于prompt-pwd
+zmodule prompt-pwd
+zmodule eriner
+#################################
+
+在终端运行命令：zimfw install 安装新模块 
+
+3. 设置zshrc中的别名
+
+alias update="source ~/.zshrc"
+
+alias ra="ranger " 
+
+alias vim="~/.local/nvim/bin/nvim " 
+
+alias ezsh="nvim ~/.zshrc"
+alias ealias="nvim ~/.config/zsh/aliases.zsh"
+alias eenv="nvim ~/.config/zsh/env.zsh"
+alias eclash="nvim ~/.local/share/clash/config.yaml"
+alias eproxychains="sudo nvim /etc/proxychains.conf"
+
+alias czsh="cat ~/.zshrc"
+alias calias="lolcat ~/.config/zsh/aliases.zsh"
+alias cenv="lolcat ~/.config/zsh/env.zsh"
+alias cclash="local ~/.local/share/clash/config.yaml"
+alias cproxychains="lolcat /etc/proxychains.conf"
+
+alias cdzsh="cd ~/.config/zsh"
+alias cdvim="cd ~/.config/nvim"
+alias cdconf="cd ~/.config/"
+alias cdranger="cd ~/.config/ranger"
+alias cdpic="cd ~/Pictures"
+alias sshfslab="mkdir ~/Downloads/jing && sshfs jing@192.168.3.4:/home/jing ~/Downloads/jing"
+alias sshfsmount="if [ ! -d ~/Downloads/jing ]; then mkdir ~/Downloads/jing; fi && sshfs jing@192.168.3.4:/home/jing ~/Downloads/jing"
+alias sshfsumount="umount ~/Downloads/jing"
+alias sshlab="ssh -X jing@192.168.3.4"
+
+alias ta="tmux attach-session -dt "
+alias tn="tmux new-session -t "
+alias tk="tmux kill-session -t "
+alias tl="tmux ls"
+alias tp="tmuxp load "
+
+# setting for proxy
+# alias sshvpn="export https_proxy=http://43.131.72.28:7890 http_proxy=http://43.131.72.28:7890 all_proxy=socks5://43.131.72.28:7890"
+alias vpn="export https_proxy=http://10.16.142.1:7890 http_proxy=http://10.16.142.1:7890"
+alias macvpn="export https_proxy=http://10.16.4.72:7890 http_proxy=http://10.16.4.72:7890"
+alias localvpn="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890"
+alias autosshvpn="export https_proxy=http://127.0.0.1:9990 http_proxy=http://127.0.0.1:9990"
+alias sshvpn="export https_proxy=http://43.131.72.28:7890 http_proxy=http://43.131.72.28:7890"
+
+alias devpn="export https_proxy='' http_proxy='' all_proxy=''"
+alias vpninfo='echo -e https_proxy:"\t" $https_proxy "\n"http_proxy:"\t" $http_proxy  "\n"all_proxy:"\t" $all_proxy'
+
+4. 安装neovim
+
+
+
+
